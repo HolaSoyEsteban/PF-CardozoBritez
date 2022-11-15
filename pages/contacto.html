@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Link al estilo de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    
     <!-- Link al archivo css -->
     <link rel="stylesheet" href="../css/estilos.css">
     
@@ -14,17 +22,47 @@
 <body>
 
     <header>
-        <img src="../img/Logo-final.png" alt="Logo de la página">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="sedes.html">Sedes</a></li>
-                <li><a href="profesores.html">Profesores</a></li>
-                <li><a href="combates.html">Combates</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        
+        <div class="logo">
+            <img src="../img/Logo-final.png" alt="Logo de la pagina">
+        </div>
+        
+        
+        <!-- Acá apliqué bootstrap en el menú -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="titulo-del-menu">Menu</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link links-del-menu" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links-del-menu" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links-del-menu" aria-current="page" href="sedes.html">Sedes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links-del-menu" aria-current="page" href="profesores.html">Profesores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links-del-menu" aria-current="page" href="combates.html">Combates</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link links-del-menu-actual" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Hasta acá llega el menú de Bootstrap -->
+
+        
 
     </header>
     
@@ -123,6 +161,8 @@
         </div>
 
     </footer>
+    <!-- JavaScript para Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>

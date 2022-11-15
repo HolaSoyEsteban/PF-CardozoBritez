@@ -18,11 +18,14 @@ header {
     z-index: 2;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
 header nav {
-    background-color: rgba(73, 56, 56, 0.801);
-    position: absolute;
-    top: 50px;
-    right: 20px;
+    background-color: rgb(0, 0, 0);
 }
 
 header nav ul {
@@ -38,11 +41,34 @@ header nav ul li {
     
 }
 
-header nav ul li a {
-    color: antiquewhite;
-    font-size: 19px;
+.titulo-del-menu {
+    color: rgb(247, 234, 221);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
+}
+
+.links-del-menu-actual {
+    color: rgb(247, 234, 221)!important;
+    background-color: rgba(104, 97, 97, 0.486);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
+    border-radius: 10px;
+    padding: 0.4em;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.links-del-menu {
+    color: rgb(247, 234, 221)!important;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 
@@ -215,7 +241,9 @@ footer img {
     left: 850px;
 }
 
-/* --------------------------------- CSS de las demas paginas -----------------------------------*/
+/* ------------------------------------------------------ CSS de las demas paginas -----------------------------------------------------------------*/
+
+/* --------------------------------- CSS para pagina Nosotros -----------------------------------*/
 
 .cuerpoCentralGris {
     background-color: rgba(0, 0, 0, 0.568);
