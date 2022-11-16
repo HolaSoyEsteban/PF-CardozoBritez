@@ -20,7 +20,7 @@ header {
 
 .logo {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 
 }
 
@@ -202,7 +202,7 @@ main a button {
     border-radius: 20px;
     border-color: brown;
     background-color: rgba(0, 0, 0, 0.637);
-    font-size: 1.5em;
+    font-size: 1em;
     color: rgb(218, 167, 0);
     height: 2.5em;
     text-align: center;
@@ -240,10 +240,29 @@ footer ul li {
 .redesSociales a img {
     width: 50px;
 }
+.redesSociales-movil {
+    display: none;
+}
 
 /* ------------------------------------------------------ CSS de las demas paginas -----------------------------------------------------------------*/
 
 /* --------------------------------- CSS para pagina Nosotros -----------------------------------*/
+
+.contenedor-para-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "h2 h2"
+    "historia-p1 img-1"
+    "historia-p2 img-2"
+    "historia-p3 img-3";
+}
+
+.contenedor-para-grid h2 {
+    grid-area: h2;
+}
 
 .cuerpoCentralGris {
     background-color: rgba(0, 0, 0, 0.568);
@@ -253,34 +272,48 @@ footer ul li {
     padding-bottom: 30px;
 }
 
-.nuestraHistoria {
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-
-    grid-template-areas: 
-    "historia historia img"
-    "historia historia img"
-    "historia historia img";
-}
-
-.nuestraHistoria p {
-    grid-area: historia;
+.nuestraHistoria-parrafo-1 {
+    grid-area: historia-p1;
     color: antiquewhite;
     text-align: left;
-    
-    font-size: 20px;
+    font-size: 1.5rem;
+    background-color: rgba(20, 15, 15, 0.616);
+}
+.nuestraHistoria-parrafo-2 {
+    grid-area: historia-p2;
+    color: antiquewhite;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.nuestraHistoria-parrafo-3 {
+    grid-area: historia-p3;
+    color: antiquewhite;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: rgba(20, 15, 15, 0.616);
 }
 
-.nuestraHistoria img {
-    grid-area: img;
-    width: 300px;
-    height: 300px;
+.nuestraHistoria-img-1 {
+    grid-area: img-1;
+    width: 100%;
+    height: 100%;
 }
+.nuestraHistoria-img-2 {
+    grid-area: img-2;
+    width: 100%;
+    height: 100%;
+}
+.nuestraHistoria-img-3 {
+    grid-area: img-3;
+    width: 100%;
+    height: 100%;
+}
+
 
 .separador {
     height: 200px;
 }
+
 /*------------------------------ Css para las sedes ----------------------------------*/
 
 .sedeGimnasios div p {
@@ -354,4 +387,119 @@ footer ul li {
     font-size: 18px;
     color: antiquewhite;
     background-color: maroon;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    /* -------------------- Index ------------------- */
+    .logo {
+        justify-content: center;
+    
+    }
+    .fraseMotivacional {
+        height: 4rem;
+    }
+    main div p {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 1px black;
+        padding: 1em;
+        text-align: center;
+    }
+    footer div p {
+        margin: 0px 0px 20px 0px;
+        font-size: 1rem;
+        
+    }
+    
+    footer ul li {
+        font-size: 0.9rem;
+        margin: 5px;
+        list-style: none;
+    }
+    
+    .redesSociales a img {
+        display: none;
+    }
+    .redesSociales-movil {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .redesSociales-movil a img {
+        width: 40px;
+        
+    }
+
+    /* ---------------------------------------------- */
+
+    
+    /* ------------------- Nosotros ----------------- */
+    .contenedor-para-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+        grid-template-areas: 
+        "h2"
+        "img-1"
+        "historia-p1"
+        "img-2"
+        "historia-p2"
+        "img-3"
+        "historia-p3";
+    }
+    .nuestraHistoria-img-1 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 100vw;
+        height: 100vw;
+    }
+    .nuestraHistoria-img-2 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 100vw;
+        height: 100vw;
+    }
+    .nuestraHistoria-img-3 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 100vw;
+        height: 100vw;
+    }
+    
+    
+    .separador {
+        height: 50px;
+    }
+
+    /* ---------------------------------------------- */
+
+
+    /* -------------------- Sedes ------------------- */
+
+
+    /* ---------------------------------------------- */
+
+
+    /* ------------------ Profesores ---------------- */
+
+
+    /* ---------------------------------------------- */
+
+
+    /* ------------------- Combates ----------------- */
+
+
+    /* ---------------------------------------------- */
+
+
+    /* ------------------- Contacto ----------------- */
+
+
+    /* -----------------------------------------------*/
 }
