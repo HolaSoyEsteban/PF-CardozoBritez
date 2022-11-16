@@ -6,9 +6,9 @@
 }
 
 body {
-    background-image: url(../img/background-body.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img/background-body2.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
 }
 
 header {
@@ -63,7 +63,7 @@ header nav ul li {
 }
 
 .links-del-menu {
-    color: rgb(247, 234, 221)!important;
+    color: rgb(247, 234, 221)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
     font-size: 1.4em;
     text-align: center;
     text-decoration: none;
@@ -72,21 +72,13 @@ header nav ul li {
     
 }
 
-.fraseMotivacional {
-    background-color: maroon;
-    text-align: center;
-    font-size: 30px;
-    color: goldenrod;
-    font-family: 'Special Elite', cursive;
-}
 
 main {
-    background-color: rgba(250, 235, 215, 0.712);
+    background-color: rgba(190, 190, 190, 0.788);
 }
 
 .videoPresentacion {
-    position: relative;
-    left: 450px;
+    width: 100%;
 }
 
 main h1 {
@@ -96,76 +88,84 @@ main h1 {
     text-shadow: 2px 3px 3px black;
 }
 main h2 {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     color: rgb(224, 222, 222);
     text-shadow: 3px 3px 2px black;
 }
 
 main div p {
-    width: 1000px;
-    font-size: 30px;
+    font-size: 2rem;
+    padding: 1em;
     text-align: center;
-    position: relative;
-    left: 450px;
+}
+
+.fraseMotivacional {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: maroon;
+    text-align: center;
+    font-size: 2rem;
+    color: goldenrod;
+    font-family: 'Special Elite', cursive;
+    padding: 0px;
 }
 
 main h3 {
-    font-size: 26px;
-    color: darkred;
-    text-shadow: 3px 3px 4px rgb(66, 54, 0);
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(66, 54, 0);
     margin-top: 25px;
     text-align: center;
-    margin-left: -170px;
-    text-decoration: underline;
-    text-decoration-color: rgb(59, 43, 0);
+    
+    
     
 }
 
 .perfilesProfesores {
-    background-color: rgba(0, 0, 0, 0.568);
-    font-size: 40px;
-    margin-top: 30px;
-    margin-left: -60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.699);
+    font-size: 3rem;
+    
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .perfiles {
-    display: inline-block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
     
 }
 
 .perfilesNombres {
-    display: inline;
-    position: relative;
-    left: 0px;
-    margin-left: 175px;
+    
     color: antiquewhite;
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 .perfiles img {
-    position: relative;
-    left: 100px;
     width: 300px;
     height: 200px;
-    border-radius: 300px;
-    
-    
+    border-radius: 300px;    
 }
 
 .opinionAlumnos {
-    margin-left: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .opinionAlumnos div {
     width: 200px;
-    display: inline-block;
+    display: block;
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
@@ -176,7 +176,6 @@ main h3 {
 .opinionAlumnos div p {
     width: 250px;
     background-color: rgb(17, 1, 1);
-    margin-left: -450px;
     margin-bottom: 8px;
     font-size: 20px;
     border-radius: 15px;
@@ -191,6 +190,11 @@ main h3 {
     left: 20px;
 }
 
+.BotondeCombates {
+    display: flex;
+    justify-content: center;
+}
+
 main a button {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -198,47 +202,43 @@ main a button {
     border-radius: 20px;
     border-color: brown;
     background-color: rgba(0, 0, 0, 0.637);
-    font-size: 20px;
+    font-size: 1.5em;
     color: rgb(218, 167, 0);
-    height: 50px;
-    margin-left: 885px;
+    height: 2.5em;
+    text-align: center;
 }
 
 footer {
     color: antiquewhite;
     background-color: rgba(32, 1, 1, 0.938);
+    display: flex;
+    justify-content:space-around;
+    align-items:center
 }
 
 .sedesFooter{
     margin: 20px;
-    display: inline-block;
-    position: relative;
-    left: 500px;
+    display: block;
 }
 
+footer div{
+    display: block;
+    
+}
 footer div p {
     margin: 0px 0px 20px 0px;
     font-size: 20px;
+    
 }
 
 footer ul li {
     font-size: 14px;
     margin: 5px;
-}
-
-footer img {
-    width: 200px;
-}
-
-.redesSociales {
-    background-color: rgba(255, 228, 181, 0.658);
-    
+    list-style: none;
 }
 
 .redesSociales a img {
     width: 50px;
-    position: relative;
-    left: 850px;
 }
 
 /* ------------------------------------------------------ CSS de las demas paginas -----------------------------------------------------------------*/
@@ -253,18 +253,29 @@ footer img {
     padding-bottom: 30px;
 }
 
+.nuestraHistoria {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+
+    grid-template-areas: 
+    "historia historia img"
+    "historia historia img"
+    "historia historia img";
+}
+
 .nuestraHistoria p {
+    grid-area: historia;
     color: antiquewhite;
     text-align: left;
-    display: inline-block;
-    margin-left: -350px;
+    
     font-size: 20px;
 }
 
 .nuestraHistoria img {
+    grid-area: img;
     width: 300px;
     height: 300px;
-    margin-left: 550px;
 }
 
 .separador {
@@ -274,15 +285,9 @@ footer img {
 
 .sedeGimnasios div p {
     color: antiquewhite;
-    text-align: left;
-    display: inline-block;
+    text-align: center;
     margin-left: 0px;    
-    font-size: 18px;
-    width: 600px;
-}
-
-.sedeGimnasios iframe {
-    margin-left: 500px;
+    font-size: 1.5rem;
 }
 
 /* --------------------------------- CSS para profesores ------------------------------------*/
@@ -315,11 +320,6 @@ footer img {
 
 /*---------------------------------------- CSS para Combates --------------------------------*/
 
-.videosCombates {
-    margin-top: 80px;
-    margin-left: 105px;
-
-}
 
 /*---------------------------------------- CSS para Contacto ---------------------------------*/
 
