@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: left;
 
+
 }
 
 header nav {
@@ -51,7 +52,7 @@ header nav ul li {
 }
 
 .links-del-menu-actual {
-    color: rgb(247, 234, 221)!important;
+    color: rgb(247, 234, 221)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
     background-color: rgba(104, 97, 97, 0.486);
     box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
     border-radius: 10px;
@@ -59,7 +60,7 @@ header nav ul li {
     font-size: 1.4em;
     text-align: center;
     text-decoration: none;
-    
+    transition: all 2s;
 }
 
 .links-del-menu {
@@ -69,6 +70,18 @@ header nav ul li {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+    transition: all 1s;
+}
+
+.links-del-menu:hover {
+    color: rgb(255, 254, 254)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
+    font-size: 1.6em;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: scale(1.15);
+    transition: all 1s;
     
 }
 
@@ -493,7 +506,12 @@ footer ul li {
     
     }
     .fraseMotivacional {
-        height: 4rem;
+        height: 10rem;
+        font-size: 0.4rem;
+    }
+    .videoPresentacion {
+        width: 100%;
+        height: 100vw;
     }
     main div p {
         font-size: 1.5rem;
