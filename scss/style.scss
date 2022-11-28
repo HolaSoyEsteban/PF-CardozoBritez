@@ -1,0 +1,285 @@
+/* ----- Reset -----*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// Hojas secundarias //
+
+@import "variables.scss";
+@import "nosotros.scss";
+@import "sedes.scss";
+@import "profesores.scss";
+@import "combates.scss";
+@import "contacto.scss";
+
+/*------------------------------------ CSS para el Index -------------------------------------*/
+
+body {
+    background-image: url(../img/background-body2.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    header {
+        background-color: rgba(32, 1, 1, 0.938);
+        div {
+            .logo {
+                display: flex;
+                justify-content: left;
+            }
+        }
+    }
+    section {
+        display: block;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        nav {
+            background-color: rgb(0, 0, 0);
+            div {
+                button {
+                    span {
+                        &.titulo-del-menu {
+                            color: rgb(247, 234, 221)!important;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-size: 1.6em;
+                            font-weight: bold;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                div {
+                    ul {
+                        list-style: none;
+                        li {
+                            margin: 10px;
+                            padding: 5px;
+                            display: inline-block;
+                            a {
+                                color: rgb(247, 234, 221)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
+                                &.links-del-menu {
+                                    color: rgb(247, 234, 221); 
+                                    font-size: 1.4em;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    margin-left: 10px;
+                                    margin-right: 10px;
+                                    transition: all 1s;
+                                    &:hover {
+                                        color: rgb(255, 254, 254); 
+                                        font-size: 1.6em;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        margin-left: 10px;
+                                        margin-right: 10px;
+                                        transform: scale(1.15);
+                                        transition: all 1s;
+                                    }
+                                }
+                                &.links-del-menu-actual {
+                                    color: rgb(247, 234, 221); 
+                                    background-color: rgba(104, 97, 97, 0.486);
+                                    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
+                                    border-radius: 10px;
+                                    padding: 0.4em;
+                                    font-size: 1.4em;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    transition: all 2s;
+                                    &:hover {
+                                        color: rgb(255, 254, 254);
+                                        font-size: 1.6em;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        margin-left: 10px;
+                                        margin-right: 10px;
+                                        transform: scale(1.15);
+                                        transition: all 1s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        background-color: rgba(190, 190, 190, 0.788);
+        h1 {
+            color: rgb(161, 116, 0);
+            font-size: 60px;
+            text-align: center;
+            text-shadow: 2px 3px 3px black;
+        }
+        iframe.videoPresentacion {
+             width: 100%;
+            }
+        div {
+            p {
+                font-size: 2rem;
+                padding: 1em;
+                text-align: center;
+            }
+            &.fraseMotivacional {
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: maroon;
+                text-align: center;
+                font-size: 2rem;
+                color: goldenrod;
+                font-family: 'Special Elite', cursive;
+                padding: 0px;
+            }
+            &.perfilesProfesores {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                background-color: rgba(0, 0, 0, 0.699);
+                font-size: 3rem;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                h2 {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: rgb(224, 222, 222);
+                    text-shadow: 3px 3px 2px black;
+                }
+                div {
+                    &.perfiles {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        img {
+                            width: 300px;
+                            height: 200px;
+                            border-radius: 300px;
+                        }
+                        div {
+                            p {
+                                &.perfilesNombres {
+                                    color: antiquewhite;
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.opinionAlumnos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                div {
+                    width: 200px;
+                    display: block;
+                    margin-top: 50px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    p {
+                        width: 250px;
+                        background-color: rgb(17, 1, 1);
+                        margin-bottom: 8px;
+                        font-size: 20px;
+                        border-radius: 15px;
+                        color: antiquewhite;
+                    }
+                    div {
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 100px;
+                            position: relative;
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+            &.BotondeCombates {
+                display: flex;
+                justify-content: center;
+                a button {
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    width: 150px;
+                    border-radius: 20px;
+                    border-color: brown;
+                    background-color: rgba(0, 0, 0, 0.637);
+                    font-size: 1em;
+                    color: rgb(218, 167, 0);
+                    height: 2.5em;
+                    text-align: center;
+                    transition: all 1.3s;
+                    &:hover {
+                        margin-top: 50px;
+                        margin-bottom: 30px;
+                        width: 155px;
+                        border-radius: 20px;
+                        border-color: rgb(122, 2, 2);
+                        background-color: rgba(0, 0, 0, 0.637);
+                        font-size: 1.4em;
+                        color: rgb(243, 241, 236);
+                        height: 2.7em;
+                        text-align: center;
+                        transition: all 1.3s;
+                    }
+                }
+            }
+            &.separador {
+                height: 200px;
+            }
+        }
+        h3 {
+            font-size: 3rem;
+            color: rgb(0, 0, 0);
+            text-shadow: 5px 5px 5px rgb(66, 54, 0);
+            margin-top: 25px;
+            text-align: center;
+        }
+    }
+    footer {
+        color: antiquewhite;
+        background-color: rgba(32, 1, 1, 0.938);
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        div {
+            display: block;
+            &.sedesFooter{
+                margin: 20px;
+                display: block;
+                p {
+                    margin: 0px 0px 20px 0px;
+                    font-size: 20px;
+                }
+                ul {
+                    li {
+                        font-size: 14px;
+                        margin: 5px;
+                        list-style: none;
+                    }
+                }
+            }
+            &.redesSociales {
+                a{
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+    div {
+        &.redesSociales-movil {
+            display: none;
+        }
+    }
+}
+
+/* ----------------------------------------------------------------------------------------- */

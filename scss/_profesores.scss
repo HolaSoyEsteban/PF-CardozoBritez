@@ -1,0 +1,103 @@
+/* ------------------------- CSS para página Profesores ------------------------ */
+
+body {
+    main{
+        div {
+            &.cuerpoCentralGris {
+                background-color: rgba(0, 0, 0, 0.568);
+                font-size: 40px;
+                margin-top: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                h2 {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: rgb(224, 222, 222);
+                    text-shadow: 3px 3px 2px black;
+                }
+            }
+            &.contenedor-para-grid-profesores {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+            
+                grid-template-areas: 
+                "h2 h2"
+                "Mickey texto-Mickey"
+                "Rocky texto-Rocky"
+                "Apollo texto-Apollo"
+                "Clubber texto-Clubber"
+                "Drago texto-Drago";
+                h2 {
+                    grid-area: h2;
+                }
+                div {
+                    &.plantelProfesores-parrafo-Mickey {
+                        grid-area: texto-Mickey;
+                        color: antiquewhite;
+                        text-align: left;
+                        font-size: 1.5rem;
+                        background-color: rgba(20, 15, 15, 0.616);
+                    }
+                    &.plantelProfesores-parrafo-Rocky {
+                        grid-area: texto-Rocky;
+                        color: antiquewhite;
+                        text-align: left;
+                        font-size: 1.5rem;
+                        background-color: rgba(20, 15, 15, 0.616);
+                    }
+                    &.plantelProfesores-parrafo-Apollo {
+                        grid-area: texto-Apollo;
+                        color: antiquewhite;
+                        text-align: left;
+                        font-size: 1.5rem;
+                        background-color: rgba(20, 15, 15, 0.616);
+                    }
+                    &.plantelProfesores-parrafo-Clubber {
+                        grid-area: texto-Clubber;
+                        color: antiquewhite;
+                        text-align: left;
+                        font-size: 1.5rem;
+                        background-color: rgba(20, 15, 15, 0.616);
+                    }
+                    &.plantelProfesores-parrafo-Drago {
+                        grid-area: texto-Drago;
+                        color: antiquewhite;
+                        text-align: left;
+                        font-size: 1.5rem;
+                        background-color: rgba(20, 15, 15, 0.616);
+                    }
+                }
+                img {
+                    &.plantelProfesores-img-Mickey {
+                        grid-area: Mickey;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.plantelProfesores-img-Rocky {
+                        grid-area: Rocky;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.plantelProfesores-img-Apollo {
+                        grid-area: Apollo;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.plantelProfesores-img-Clubber {
+                        grid-area: Clubber;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.plantelProfesores-img-Drago {
+                        grid-area: Drago;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------------------------------------------------------------------------- */

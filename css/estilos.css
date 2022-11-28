@@ -1,956 +1,429 @@
-/* -------------- Css para el Index  ------------ */
+@charset "UTF-8";
+/* ----- Reset -----*/
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
 
-body {
-    background-image: url(../img/background-body2.jpg);
-    background-repeat: repeat-y;
-    background-size: 100%;
-}
-
-header {
-    background-color: rgba(32, 1, 1, 0.938);
-}
-
-.logo {
-    display: flex;
-    justify-content: left;
-}
-
-section {
-    display: block;
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-}
-
-section nav {
-    background-color: rgb(0, 0, 0);
-}
-
-section nav ul {
-    list-style: none;
-}
-
-section nav ul li {
-    margin: 10px;
-    padding: 5px;
-    display: inline-block; 
-}
-
-.titulo-del-menu {
-    color: rgb(247, 234, 221);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.6em;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-}
-
-.links-del-menu-actual {
-    color: rgb(247, 234, 221)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
-    background-color: rgba(104, 97, 97, 0.486);
-    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
-    border-radius: 10px;
-    padding: 0.4em;
-    font-size: 1.4em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 2s;
-}
-
-.links-del-menu {
-    color: rgb(247, 234, 221)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
-    font-size: 1.4em;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: all 1s;
-}
-
-.links-del-menu:hover {
-    color: rgb(255, 254, 254)!important; /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */
-    font-size: 1.6em;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    transform: scale(1.15);
-    transition: all 1s;
-    
-}
-
-main {
-    background-color: rgba(190, 190, 190, 0.788);
-}
-
-.videoPresentacion {
-    width: 100%;
-}
-
-main h1 {
-    color: rgb(161, 116, 0);
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 2px 3px 3px black;
-}
-main h2 {
+/* ------------------------- CSS para página Nosotros ----------------------- */
+body main div.cuerpoCentralGris {
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 40px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  body main div.cuerpoCentralGris h2 {
     font-size: 2rem;
     text-align: center;
-    color: rgb(224, 222, 222);
-    text-shadow: 3px 3px 2px black;
-}
+    color: #e0dede;
+    text-shadow: 3px 3px 2px black; }
 
-main div p {
-    font-size: 2rem;
-    padding: 1em;
-    text-align: center;
-}
-
-.fraseMotivacional {
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: maroon;
-    text-align: center;
-    font-size: 2rem;
-    color: goldenrod;
-    font-family: 'Special Elite', cursive;
-    padding: 0px;
-}
-
-main h3 {
-    font-size: 3rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 5px rgb(66, 54, 0);
-    margin-top: 25px;
-    text-align: center;
-    
-    
-    
-}
-
-.perfilesProfesores {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.699);
-    font-size: 3rem;
-    
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.perfiles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-
-.perfilesNombres {
-    
-    color: antiquewhite;
-    font-size: 2rem;
-}
-
-.perfiles img {
-    width: 300px;
-    height: 200px;
-    border-radius: 300px;    
-}
-
-.opinionAlumnos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.opinionAlumnos div {
-    width: 200px;
-    display: block;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-    
-}
-
-.opinionAlumnos div p {
-    width: 250px;
-    background-color: rgb(17, 1, 1);
-    margin-bottom: 8px;
-    font-size: 20px;
-    border-radius: 15px;
-    color: antiquewhite;
-}
-
-.opinionAlumnos div div img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    position: relative;
-    left: 20px;
-}
-
-.BotondeCombates {
-    display: flex;
-    justify-content: center;
-}
-
-
-main a button {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    width: 150px;
-    border-radius: 20px;
-    border-color: brown;
-    background-color: rgba(0, 0, 0, 0.637);
-    font-size: 1em;
-    color: rgb(218, 167, 0);
-    height: 2.5em;
-    text-align: center;
-    transition: all 1.3s;
-}
-
-main a button:hover {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    width: 155px;
-    border-radius: 20px;
-    border-color: rgb(122, 2, 2);
-    background-color: rgba(0, 0, 0, 0.637);
-    font-size: 1.4em;
-    color: rgb(243, 241, 236);
-    height: 2.7em;
-    text-align: center;
-    transition: all 1.3s;
-}
-
-footer {
-    color: antiquewhite;
-    background-color: rgba(32, 1, 1, 0.938);
-    display: flex;
-    justify-content:space-around;
-    align-items:center
-}
-
-.sedesFooter{
-    margin: 20px;
-    display: block;
-}
-
-footer div{
-    display: block;
-    
-}
-footer div p {
-    margin: 0px 0px 20px 0px;
-    font-size: 20px;
-    
-}
-
-footer ul li {
-    font-size: 14px;
-    margin: 5px;
-    list-style: none;
-}
-
-.redesSociales a img {
-    width: 50px;
-}
-.redesSociales-movil {
-    display: none;
-}
-
-/* ------------------------------------------------------ CSS de las demas paginas -----------------------------------------------------------------*/
-
-/* --------------------------------- CSS para pagina Nosotros -----------------------------------*/
-
-.contenedor-para-grid {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
-
-    grid-template-areas: 
-    "h2 h2"
-    "historia-p1 img-1"
-    "historia-p2 img-2"
-    "historia-p3 img-3";
-}
-
-.contenedor-para-grid h2 {
-    grid-area: h2;
-}
-
-.cuerpoCentralGris {
-    background-color: rgba(0, 0, 0, 0.568);
-    font-size: 40px;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.nuestraHistoria-parrafo-1 {
+body main div.contenedor-para-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas: "h2 h2" "historia-p1 img-1" "historia-p2 img-2" "historia-p3 img-3"; }
+  body main div.contenedor-para-grid h2 {
+    grid-area: h2; }
+  body main div.contenedor-para-grid div.nuestraHistoria-parrafo-1 {
     grid-area: historia-p1;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-.nuestraHistoria-parrafo-2 {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid div.nuestraHistoria-parrafo-2 {
     grid-area: historia-p2;
     color: antiquewhite;
     text-align: left;
-    font-size: 1.5rem;
-}
-.nuestraHistoria-parrafo-3 {
+    font-size: 1.5rem; }
+  body main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
     grid-area: historia-p3;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-
-.nuestraHistoria-img-1 {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
     grid-area: img-1;
     width: 100%;
-    height: 100%;
-}
-.nuestraHistoria-img-2 {
+    height: 100%; }
+  body main div.contenedor-para-grid img.nuestraHistoria-img-2 {
     grid-area: img-2;
     width: 100%;
-    height: 100%;
-}
-.nuestraHistoria-img-3 {
+    height: 100%; }
+  body main div.contenedor-para-grid img.nuestraHistoria-img-3 {
     grid-area: img-3;
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
+body main div.separador {
+  height: 200px; }
 
-.separador {
-    height: 200px;
-}
-
-/*------------------------------ Css para las sedes ----------------------------------*/
-
-.sedeGimnasios div p {
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------- CSS para página Sedes ----------------------- */
+body main div.cuerpoCentralGris {
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 40px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  body main div.cuerpoCentralGris h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #e0dede;
+    text-shadow: 3px 3px 2px black; }
+  body main div.cuerpoCentralGris div.sedeGimnasios div p {
     color: antiquewhite;
     text-align: center;
-    margin-left: 0px;    
-    font-size: 1.5rem;
-}
+    margin-left: 0px;
+    font-size: 1.5rem; }
+  body main div.cuerpoCentralGris div.sedeGimnasios div div p {
+    color: antiquewhite;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 1.5rem; }
 
-/* --------------------------------- CSS para profesores ------------------------------------*/
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------- CSS para página Profesores ------------------------ */
+body main div.cuerpoCentralGris {
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 40px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  body main div.cuerpoCentralGris h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #e0dede;
+    text-shadow: 3px 3px 2px black; }
 
-.contenedor-para-grid-profesores {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
-
-    grid-template-areas: 
-    "h2 h2"
-    "Mickey texto-Mickey"
-    "Rocky texto-Rocky"
-    "Apollo texto-Apollo"
-    "Clubber texto-Clubber"
-    "Drago texto-Drago";
-}
-
-.contenedor-para-grid-profesores h2 {
-    grid-area: h2;
-}
-
-.cuerpoCentralGris {
-    background-color: rgba(0, 0, 0, 0.568);
-    font-size: 40px;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.plantelProfesores-parrafo-Mickey {
+body main div.contenedor-para-grid-profesores {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "h2 h2" "Mickey texto-Mickey" "Rocky texto-Rocky" "Apollo texto-Apollo" "Clubber texto-Clubber" "Drago texto-Drago"; }
+  body main div.contenedor-para-grid-profesores h2 {
+    grid-area: h2; }
+  body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey {
     grid-area: texto-Mickey;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-.plantelProfesores-parrafo-Rocky {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Rocky {
     grid-area: texto-Rocky;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-.plantelProfesores-parrafo-Apollo {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Apollo {
     grid-area: texto-Apollo;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-.plantelProfesores-parrafo-Clubber {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Clubber {
     grid-area: texto-Clubber;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-.plantelProfesores-parrafo-Drago {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Drago {
     grid-area: texto-Drago;
     color: antiquewhite;
     text-align: left;
     font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616);
-}
-
-
-.plantelProfesores-img-Mickey {
+    background-color: rgba(20, 15, 15, 0.616); }
+  body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
     grid-area: Mickey;
     width: 100%;
-    height: 100%;
-}
-.plantelProfesores-img-Rocky {
+    height: 100%; }
+  body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Rocky {
     grid-area: Rocky;
     width: 100%;
-    height: 100%;
-}
-.plantelProfesores-img-Apollo {
+    height: 100%; }
+  body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Apollo {
     grid-area: Apollo;
     width: 100%;
-    height: 100%;
-}
-.plantelProfesores-img-Clubber {
+    height: 100%; }
+  body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Clubber {
     grid-area: Clubber;
     width: 100%;
-    height: 100%;
-}
-.plantelProfesores-img-Drago {
+    height: 100%; }
+  body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Drago {
     grid-area: Drago;
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
-
-
-.separador {
-    height: 200px;
-}
-
-/*---------------------------------------- CSS para Combates --------------------------------*/
-
-
-
-/*---------------------------------------- CSS para Contacto ---------------------------------*/
-
-.formulario {
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------- CSS para página Combates ------------------------ */
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------- CSS para página Contacto ------------------------ */
+body main div.cuerpoCentralGris {
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 40px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  body main div.cuerpoCentralGris h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #e0dede;
+    text-shadow: 3px 3px 2px black; }
+  body main div.cuerpoCentralGris div.formulario {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    text-align: left;
-}
+    text-align: left; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div label {
+      color: antiquewhite;
+      text-shadow: 2px 2px 4px black; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormulario {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      height: 50px;
+      font-size: 2rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioConsulta {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 100%;
+      height: 75px;
+      font-size: 1.4rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton {
+      width: 260px;
+      height: 30px;
+      font-size: 18px;
+      color: antiquewhite;
+      background-color: #1b7e02; }
+      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton:hover {
+        width: 260px;
+        height: 30px;
+        font-size: 18px;
+        color: antiquewhite;
+        background-color: #24a304; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset {
+      width: 260px;
+      height: 30px;
+      font-size: 18px;
+      color: antiquewhite;
+      background-color: maroon; }
+      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset:hover {
+        width: 260px;
+        height: 30px;
+        font-size: 18px;
+        color: antiquewhite;
+        background-color: #c20303; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div select.inputFormulario {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      height: 50px;
+      font-size: 2rem; }
 
-.formulario label {
-    color: antiquewhite;
-    text-shadow: 2px 2px 4px black;
-}
-
-.inputFormulario {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 50px;
-    font-size: 2rem;
-}
-
-.inputFormularioConsulta {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: 75px;
-    font-size: 1.4rem;
-}
-
-.inputFormularioBoton {
-    width: 260px;
-    height: 30px;
-    font-size: 18px;
-    color: antiquewhite;
-    background-color: rgb(27, 126, 2);
-}
-.inputFormularioBoton:hover {
-    width: 260px;
-    height: 30px;
-    font-size: 18px;
-    color: antiquewhite;
-    background-color: rgb(36, 163, 4);
-}
-.inputFormularioBoton-Reset {
-    width: 260px;
-    height: 30px;
-    font-size: 18px;
-    color: antiquewhite;
-    background-color: maroon;
-}
-
-.inputFormularioBoton-Reset:hover {
-    width: 260px;
-    height: 30px;
-    font-size: 18px;
-    color: antiquewhite;
-    background-color: rgb(194, 3, 3);
-}
-
-/*------------------------------- Mediaquery para version mobile ------------------------------*/
-
-@media screen and (max-width: 767px) {
-    
-    /* -------------------- Index ------------------- */
-    .logo {
-        justify-content: center;
-    
-    }
-    .fraseMotivacional {
-        height: 7rem;
-        font-size: 0.4rem;
-    }
-    .videoPresentacion {
-        width: 100%;
-        height: 100vw;
-    }
-    main div p {
-        font-size: 1.5rem;
-        text-shadow: 1px 1px 1px black;
-        padding: 1em;
+/* ----------------------------------------------------------------------------------------- */
+/*------------------------------------ CSS para el Index -------------------------------------*/
+body {
+  background-image: url(../img/background-body2.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%; }
+  body header {
+    background-color: rgba(32, 1, 1, 0.938); }
+    body header div .logo {
+      display: flex;
+      justify-content: left; }
+  body section {
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 2; }
+    body section nav {
+      background-color: black; }
+      body section nav div button span.titulo-del-menu {
+        color: #f7eadd !important;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.6em;
+        font-weight: bold;
         text-align: center;
-    }
-    footer div p {
-        margin: 0px 0px 20px 0px;
-        font-size: 1rem;
-        
-    }
-    
-    footer ul li {
-        font-size: 0.9rem;
-        margin: 5px;
-        list-style: none;
-    }
-    
-    .redesSociales a img {
-        display: none;
-    }
-    .redesSociales-movil {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .redesSociales-movil a img {
-        width: 40px;
-        
-    }
-
-    /* ---------------------------------------------- */
-
-    
-    /* ------------------- Nosotros ----------------- */
-    .contenedor-para-grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-        grid-template-areas: 
-        "h2"
-        "img-1"
-        "historia-p1"
-        "img-2"
-        "historia-p2"
-        "img-3"
-        "historia-p3";
-    }
-    .nuestraHistoria-img-1 {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .nuestraHistoria-img-2 {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .nuestraHistoria-img-3 {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    
-    
-    .separador {
-        height: 50px;
-    }
-
-    /* ---------------------------------------------- */
-
-
-    /* -------------------- Sedes ------------------- */
-
-
-    /* ---------------------------------------------- */
-
-
-    /* ------------------ Profesores ---------------- */
-    .contenedor-para-grid-profesores {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-        grid-template-areas: 
-        "h2"
-        "Mickey"
-        "texto-Mickey"
-        "Rocky"
-        "texto-Rocky"
-        "Apollo"
-        "texto-Apollo"
-        "Clubber"
-        "texto-Clubber"
-        "Drago"
-        "texto-Drago";
-    }
-    .plantelProfesores-img-Mickey {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Rocky {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Apollo {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Clubber {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Drago {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-
-    /* ---------------------------------------------- */
-
-
-    /* ------------------- Combates ----------------- */
-
-
-    /* ---------------------------------------------- */
-
-
-    /* ------------------- Contacto ----------------- */
-    .formulario {
-        font-size: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        text-align: left;
-    }
-    
-    .inputFormulario {
-        width: 100%;
-        height: 50px;
-        font-size: 1.2rem;
-    }
-    
-    .inputFormularioConsulta {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 100%;
-        height: 75px;
-        font-size: 1rem;
-    }
-    
-    .inputFormularioBoton {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    .inputFormularioBoton:hover {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    .inputFormularioBoton-Reset {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    
-    .inputFormularioBoton-Reset:hover {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-
-    /* -----------------------------------------------*/
-}
-
-/*---------------------------------------------------------------------------------------------*/
-
-/*------------------------------- Mediaquery para version Tablet ------------------------------*/
-
-@media screen and (max-width: 1023px) {
-    
-    /* -------------------- Index ------------------- */
-    .logo {
-        justify-content: center;
-    
-    }
-    .fraseMotivacional {
-        height: 7rem;
-        font-size: 0.4rem;
-    }
-    .videoPresentacion {
-        width: 100%;
-        height: 100vw;
-    }
-    main div p {
-        font-size: 1.5rem;
-        text-shadow: 1px 1px 1px black;
-        padding: 1em;
+        text-decoration: none; }
+      body section nav div div ul {
+        list-style: none; }
+        body section nav div div ul li {
+          margin: 10px;
+          padding: 5px;
+          display: inline-block; }
+          body section nav div div ul li a {
+            color: #f7eadd !important;
+            /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */ }
+            body section nav div div ul li a.links-del-menu {
+              color: #f7eadd;
+              font-size: 1.4em;
+              text-align: center;
+              text-decoration: none;
+              margin-left: 10px;
+              margin-right: 10px;
+              transition: all 1s; }
+              body section nav div div ul li a.links-del-menu:hover {
+                color: #fffefe;
+                font-size: 1.6em;
+                text-align: center;
+                text-decoration: none;
+                margin-left: 10px;
+                margin-right: 10px;
+                transform: scale(1.15);
+                transition: all 1s; }
+            body section nav div div ul li a.links-del-menu-actual {
+              color: #f7eadd;
+              background-color: rgba(104, 97, 97, 0.486);
+              box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
+              border-radius: 10px;
+              padding: 0.4em;
+              font-size: 1.4em;
+              text-align: center;
+              text-decoration: none;
+              transition: all 2s; }
+              body section nav div div ul li a.links-del-menu-actual:hover {
+                color: #fffefe;
+                font-size: 1.6em;
+                text-align: center;
+                text-decoration: none;
+                margin-left: 10px;
+                margin-right: 10px;
+                transform: scale(1.15);
+                transition: all 1s; }
+  body main {
+    background-color: rgba(190, 190, 190, 0.788); }
+    body main h1 {
+      color: #a17400;
+      font-size: 60px;
+      text-align: center;
+      text-shadow: 2px 3px 3px black; }
+    body main iframe.videoPresentacion {
+      width: 100%; }
+    body main div p {
+      font-size: 2rem;
+      padding: 1em;
+      text-align: center; }
+    body main div.fraseMotivacional {
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: maroon;
+      text-align: center;
+      font-size: 2rem;
+      color: goldenrod;
+      font-family: 'Special Elite', cursive;
+      padding: 0px; }
+    body main div.perfilesProfesores {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      background-color: rgba(0, 0, 0, 0.699);
+      font-size: 3rem;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      body main div.perfilesProfesores h2 {
+        font-size: 2rem;
         text-align: center;
-    }
-    footer div p {
-        margin: 0px 0px 20px 0px;
-        font-size: 1rem;
-        
-    }
-    
-    footer ul li {
-        font-size: 0.9rem;
-        margin: 5px;
-        list-style: none;
-    }
-    
-    .redesSociales a img {
-        display: none;
-    }
-    .redesSociales-movil {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .redesSociales-movil a img {
-        width: 40px;
-        
-    }
-
-    /* ---------------------------------------------- */
-
-    
-    /* ------------------- Nosotros ----------------- */
-    .contenedor-para-grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-        grid-template-areas: 
-        "h2"
-        "img-1"
-        "historia-p1"
-        "img-2"
-        "historia-p2"
-        "img-3"
-        "historia-p3";
-    }
-    .nuestraHistoria-img-1 {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .nuestraHistoria-img-2 {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .nuestraHistoria-img-3 {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    
-    
-    .separador {
-        height: 50px;
-    }
-
-    /* ---------------------------------------------- */
-
-
-    /* -------------------- Sedes ------------------- */
-
-
-    /* ---------------------------------------------- */
-
-
-    /* ------------------ Profesores ---------------- */
-    .contenedor-para-grid-profesores {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-        grid-template-areas: 
-        "h2"
-        "Mickey"
-        "texto-Mickey"
-        "Rocky"
-        "texto-Rocky"
-        "Apollo"
-        "texto-Apollo"
-        "Clubber"
-        "texto-Clubber"
-        "Drago"
-        "texto-Drago";
-    }
-    .plantelProfesores-img-Mickey {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Rocky {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Apollo {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Clubber {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-    .plantelProfesores-img-Drago {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        width: 100%;
-        height: 100vw;
-    }
-
-    /* ---------------------------------------------- */
-
-
-    /* ------------------- Combates ----------------- */
-
-
-    /* ---------------------------------------------- */
-
-
-    /* ------------------- Contacto ----------------- */
-    .formulario {
-        font-size: 1.2rem;
+        color: #e0dede;
+        text-shadow: 3px 3px 2px black; }
+      body main div.perfilesProfesores div.perfiles {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        body main div.perfilesProfesores div.perfiles img {
+          width: 300px;
+          height: 200px;
+          border-radius: 300px; }
+        body main div.perfilesProfesores div.perfiles div p.perfilesNombres {
+          color: antiquewhite;
+          font-size: 2rem; }
+    body main div.opinionAlumnos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      body main div.opinionAlumnos div {
+        width: 200px;
+        display: block;
         margin-top: 50px;
-        text-align: left;
-    }
-    
-    .inputFormulario {
-        width: 100%;
-        height: 50px;
-        font-size: 1.2rem;
-    }
-    
-    .inputFormularioConsulta {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 100%;
-        height: 75px;
-        font-size: 1rem;
-    }
-    
-    .inputFormularioBoton {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    .inputFormularioBoton:hover {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    .inputFormularioBoton-Reset {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
-    
-    .inputFormularioBoton-Reset:hover {
-        width: 260px;
-        height: 30px;
-        font-size: 1rem;
-    }
+        margin-left: 50px;
+        margin-right: 50px; }
+        body main div.opinionAlumnos div p {
+          width: 250px;
+          background-color: #110101;
+          margin-bottom: 8px;
+          font-size: 20px;
+          border-radius: 15px;
+          color: antiquewhite; }
+        body main div.opinionAlumnos div div img {
+          width: 100px;
+          height: 100px;
+          border-radius: 100px;
+          position: relative;
+          left: 20px; }
+    body main div.BotondeCombates {
+      display: flex;
+      justify-content: center; }
+      body main div.BotondeCombates a button {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 150px;
+        border-radius: 20px;
+        border-color: brown;
+        background-color: rgba(0, 0, 0, 0.637);
+        font-size: 1em;
+        color: #daa700;
+        height: 2.5em;
+        text-align: center;
+        transition: all 1.3s; }
+        body main div.BotondeCombates a button:hover {
+          margin-top: 50px;
+          margin-bottom: 30px;
+          width: 155px;
+          border-radius: 20px;
+          border-color: #7a0202;
+          background-color: rgba(0, 0, 0, 0.637);
+          font-size: 1.4em;
+          color: #f3f1ec;
+          height: 2.7em;
+          text-align: center;
+          transition: all 1.3s; }
+    body main div.separador {
+      height: 200px; }
+    body main h3 {
+      font-size: 3rem;
+      color: black;
+      text-shadow: 5px 5px 5px #423600;
+      margin-top: 25px;
+      text-align: center; }
+  body footer {
+    color: antiquewhite;
+    background-color: rgba(32, 1, 1, 0.938);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    body footer div {
+      display: block; }
+      body footer div.sedesFooter {
+        margin: 20px;
+        display: block; }
+        body footer div.sedesFooter p {
+          margin: 0px 0px 20px 0px;
+          font-size: 20px; }
+        body footer div.sedesFooter ul li {
+          font-size: 14px;
+          margin: 5px;
+          list-style: none; }
+      body footer div.redesSociales a img {
+        width: 50px; }
+  body div.redesSociales-movil {
+    display: none; }
 
-    /* -----------------------------------------------*/
-}
-
-/*---------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------- */
