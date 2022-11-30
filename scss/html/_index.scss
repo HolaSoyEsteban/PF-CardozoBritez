@@ -1,0 +1,137 @@
+/*----------------------------------- Css para página Index ---------------------------------*/
+main {
+    background-color: $color-main;
+    h1 {
+        color: $color-h1;
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 3px 3px black;
+    }
+    iframe.videoPresentacion {
+         width: 100%;
+        }
+    div {
+        p {
+            font-size: 2rem;
+            padding: 1em;
+            text-align: center;
+        }
+        &.fraseMotivacional {
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: maroon;
+            text-align: center;
+            font-size: 2rem;
+            color: goldenrod;
+            font-family: 'Special Elite', cursive;
+            padding: 0px;
+        }
+        &.perfilesProfesores {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: $color-cuerpo-central-resaltado;
+            font-size: 3rem;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+                color: $color-h2;
+                text-shadow: 3px 3px 2px black;
+            }
+            div {
+                &.perfiles {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    img {
+                        @include medidas (300px, 200px);
+                        border-radius: 300px;
+                    }
+                    div {
+                        p {
+                            &.perfilesNombres {
+                                color: $color-texto-general-claro;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.opinionAlumnos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+                width: 200px;
+                display: block;
+                margin-top: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+                p {
+                    width: 250px;
+                    background-color: rgb(17, 1, 1);
+                    margin-bottom: 8px;
+                    font-size: 20px;
+                    border-radius: 15px;
+                    color: $color-texto-general-claro;
+                }
+                div {
+                    img {
+                        @include medidas (100px, 100px);
+                        border-radius: 100px;
+                        position: relative;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+        &.BotondeCombates {
+            display: flex;
+            justify-content: center;
+            a button {
+                margin-top: 50px;
+                margin-bottom: 30px;
+                @include medidas (150px, 2.5em);
+                border-radius: 20px;
+                border-color: brown;
+                background-color: rgba(0, 0, 0, 0.637);
+                font-size: 1em;
+                color: rgb(218, 167, 0);
+                text-align: center;
+                transition: all 1.3s;
+                &:hover {
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    @include medidas (155px, 2.7em);
+                    border-radius: 20px;
+                    border-color: rgb(122, 2, 2);
+                    background-color: rgba(0, 0, 0, 0.637);
+                    font-size: 1.4em;
+                    color: rgb(243, 241, 236);
+                    text-align: center;
+                    transition: all 1.3s;
+                }
+            }
+        }
+        &.separador {
+            height: 200px;
+        }
+    }
+    h3 {
+        font-size: 3rem;
+        color: $color-h3;
+        text-shadow: 5px 5px 5px rgb(66, 54, 0);
+        margin-top: 25px;
+        text-align: center;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------*/

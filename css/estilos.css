@@ -5,10 +5,122 @@
   padding: 0px;
   box-sizing: border-box; }
 
+/*----------------------------------- Css para página Index ---------------------------------*/
+main {
+  background-color: rgba(190, 190, 190, 0.788); }
+  main h1 {
+    color: #a17400;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 3px 3px black; }
+  main iframe.videoPresentacion {
+    width: 100%; }
+  main div p {
+    font-size: 2rem;
+    padding: 1em;
+    text-align: center; }
+  main div.fraseMotivacional {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: maroon;
+    text-align: center;
+    font-size: 2rem;
+    color: goldenrod;
+    font-family: 'Special Elite', cursive;
+    padding: 0px; }
+  main div.perfilesProfesores {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(20, 15, 15, 0.616);
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    main div.perfilesProfesores h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: #e0dede;
+      text-shadow: 3px 3px 2px black; }
+    main div.perfilesProfesores div.perfiles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      main div.perfilesProfesores div.perfiles img {
+        width: 300px;
+        height: 200px;
+        border-radius: 300px; }
+      main div.perfilesProfesores div.perfiles div p.perfilesNombres {
+        color: antiquewhite;
+        font-size: 2rem; }
+  main div.opinionAlumnos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    main div.opinionAlumnos div {
+      width: 200px;
+      display: block;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px; }
+      main div.opinionAlumnos div p {
+        width: 250px;
+        background-color: #110101;
+        margin-bottom: 8px;
+        font-size: 20px;
+        border-radius: 15px;
+        color: antiquewhite; }
+      main div.opinionAlumnos div div img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        position: relative;
+        left: 20px; }
+  main div.BotondeCombates {
+    display: flex;
+    justify-content: center; }
+    main div.BotondeCombates a button {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      width: 150px;
+      height: 2.5em;
+      border-radius: 20px;
+      border-color: brown;
+      background-color: rgba(0, 0, 0, 0.637);
+      font-size: 1em;
+      color: #daa700;
+      text-align: center;
+      transition: all 1.3s; }
+      main div.BotondeCombates a button:hover {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 155px;
+        height: 2.7em;
+        border-radius: 20px;
+        border-color: #7a0202;
+        background-color: rgba(0, 0, 0, 0.637);
+        font-size: 1.4em;
+        color: #f3f1ec;
+        text-align: center;
+        transition: all 1.3s; }
+  main div.separador {
+    height: 200px; }
+  main h3 {
+    font-size: 3rem;
+    color: black;
+    text-shadow: 5px 5px 5px #423600;
+    margin-top: 25px;
+    text-align: center; }
+
+/*-----------------------------------------------------------------------------------------*/
 /* ------------------------- CSS para página Nosotros ----------------------- */
 body main div.cuerpoCentralGris {
   background-color: rgba(0, 0, 0, 0.568);
-  font-size: 40px;
+  font-size: 2rem;
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -20,7 +132,7 @@ body main div.cuerpoCentralGris {
 
 body main div.contenedor-para-grid {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
   grid-template-rows: 0.2fr 1fr 1fr 1fr;
   grid-template-areas: "h2 h2" "historia-p1 img-1" "historia-p2 img-2" "historia-p3 img-3"; }
   body main div.contenedor-para-grid h2 {
@@ -29,18 +141,18 @@ body main div.contenedor-para-grid {
     grid-area: historia-p1;
     color: antiquewhite;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: rgba(20, 15, 15, 0.616); }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-2 {
     grid-area: historia-p2;
     color: antiquewhite;
     text-align: left;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
     grid-area: historia-p3;
     color: antiquewhite;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: rgba(20, 15, 15, 0.616); }
   body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
     grid-area: img-1;
@@ -225,205 +337,372 @@ body main div.cuerpoCentralGris {
       font-size: 2rem; }
 
 /* ----------------------------------------------------------------------------------------- */
-/*------------------------------------ CSS para el Index -------------------------------------*/
+/*------------------------------------ CSS General -------------------------------------*/
 body {
   background-image: url(../img/background-body2.jpg);
   background-repeat: repeat-y;
   background-size: 100%; }
-  body header {
-    background-color: rgba(32, 1, 1, 0.938); }
-    body header div .logo {
-      display: flex;
-      justify-content: left; }
-  body section {
-    display: block;
-    position: sticky;
-    top: 0px;
-    z-index: 2; }
-    body section nav {
-      background-color: black; }
-      body section nav div button span.titulo-del-menu {
-        color: #f7eadd !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.6em;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none; }
-      body section nav div div ul {
-        list-style: none; }
-        body section nav div div ul li {
-          margin: 10px;
-          padding: 5px;
-          display: inline-block; }
-          body section nav div div ul li a {
-            color: #f7eadd !important;
-            /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */ }
-            body section nav div div ul li a.links-del-menu {
-              color: #f7eadd;
-              font-size: 1.4em;
+
+header {
+  background-color: rgba(32, 1, 1, 0.938); }
+  header div .logo {
+    display: flex;
+    justify-content: left; }
+
+section {
+  display: block;
+  position: sticky;
+  top: 0px;
+  z-index: 2; }
+  section nav {
+    background-color: black; }
+    section nav div button span.titulo-del-menu {
+      color: #f7eadd !important;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none; }
+    section nav div div ul {
+      list-style: none; }
+      section nav div div ul li {
+        margin: 10px;
+        padding: 5px;
+        display: inline-block; }
+        section nav div div ul li a {
+          color: #f7eadd !important;
+          /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */ }
+          section nav div div ul li a.links-del-menu {
+            color: #f7eadd;
+            font-size: 1.4em;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: all 1s; }
+            section nav div div ul li a.links-del-menu:hover {
+              color: #fffefe;
+              font-size: 1.6em;
               text-align: center;
               text-decoration: none;
               margin-left: 10px;
               margin-right: 10px;
+              transform: scale(1.15);
               transition: all 1s; }
-              body section nav div div ul li a.links-del-menu:hover {
-                color: #fffefe;
-                font-size: 1.6em;
-                text-align: center;
-                text-decoration: none;
-                margin-left: 10px;
-                margin-right: 10px;
-                transform: scale(1.15);
-                transition: all 1s; }
-            body section nav div div ul li a.links-del-menu-actual {
-              color: #f7eadd;
-              background-color: rgba(104, 97, 97, 0.486);
-              box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
-              border-radius: 10px;
-              padding: 0.4em;
-              font-size: 1.4em;
+          section nav div div ul li a.links-del-menu-actual {
+            color: #f7eadd;
+            font-size: 1.4em;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(104, 97, 97, 0.486);
+            box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
+            border-radius: 10px;
+            padding: 0.4em;
+            transition: all 2s; }
+            section nav div div ul li a.links-del-menu-actual:hover {
+              color: #fffefe;
+              font-size: 1.6em;
               text-align: center;
               text-decoration: none;
-              transition: all 2s; }
-              body section nav div div ul li a.links-del-menu-actual:hover {
-                color: #fffefe;
-                font-size: 1.6em;
-                text-align: center;
-                text-decoration: none;
-                margin-left: 10px;
-                margin-right: 10px;
-                transform: scale(1.15);
-                transition: all 1s; }
-  body main {
-    background-color: rgba(190, 190, 190, 0.788); }
-    body main h1 {
-      color: #a17400;
-      font-size: 60px;
-      text-align: center;
-      text-shadow: 2px 3px 3px black; }
-    body main iframe.videoPresentacion {
-      width: 100%; }
-    body main div p {
-      font-size: 2rem;
-      padding: 1em;
-      text-align: center; }
-    body main div.fraseMotivacional {
-      height: 4rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: maroon;
-      text-align: center;
-      font-size: 2rem;
-      color: goldenrod;
-      font-family: 'Special Elite', cursive;
-      padding: 0px; }
-    body main div.perfilesProfesores {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      background-color: rgba(0, 0, 0, 0.699);
-      font-size: 3rem;
-      padding-top: 30px;
-      padding-bottom: 30px; }
-      body main div.perfilesProfesores h2 {
-        font-size: 2rem;
-        text-align: center;
-        color: #e0dede;
-        text-shadow: 3px 3px 2px black; }
-      body main div.perfilesProfesores div.perfiles {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px; }
-        body main div.perfilesProfesores div.perfiles img {
-          width: 300px;
-          height: 200px;
-          border-radius: 300px; }
-        body main div.perfilesProfesores div.perfiles div p.perfilesNombres {
-          color: antiquewhite;
-          font-size: 2rem; }
-    body main div.opinionAlumnos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      body main div.opinionAlumnos div {
-        width: 200px;
-        display: block;
-        margin-top: 50px;
-        margin-left: 50px;
-        margin-right: 50px; }
-        body main div.opinionAlumnos div p {
-          width: 250px;
-          background-color: #110101;
-          margin-bottom: 8px;
-          font-size: 20px;
-          border-radius: 15px;
-          color: antiquewhite; }
-        body main div.opinionAlumnos div div img {
-          width: 100px;
-          height: 100px;
-          border-radius: 100px;
-          position: relative;
-          left: 20px; }
-    body main div.BotondeCombates {
-      display: flex;
-      justify-content: center; }
-      body main div.BotondeCombates a button {
-        margin-top: 50px;
-        margin-bottom: 30px;
-        width: 150px;
-        border-radius: 20px;
-        border-color: brown;
-        background-color: rgba(0, 0, 0, 0.637);
-        font-size: 1em;
-        color: #daa700;
-        height: 2.5em;
-        text-align: center;
-        transition: all 1.3s; }
-        body main div.BotondeCombates a button:hover {
-          margin-top: 50px;
-          margin-bottom: 30px;
-          width: 155px;
-          border-radius: 20px;
-          border-color: #7a0202;
-          background-color: rgba(0, 0, 0, 0.637);
-          font-size: 1.4em;
-          color: #f3f1ec;
-          height: 2.7em;
-          text-align: center;
-          transition: all 1.3s; }
-    body main div.separador {
-      height: 200px; }
-    body main h3 {
-      font-size: 3rem;
-      color: black;
-      text-shadow: 5px 5px 5px #423600;
-      margin-top: 25px;
-      text-align: center; }
-  body footer {
-    color: antiquewhite;
-    background-color: rgba(32, 1, 1, 0.938);
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    body footer div {
+              margin-left: 10px;
+              margin-right: 10px;
+              transform: scale(1.15);
+              transition: all 1s; }
+
+footer {
+  color: antiquewhite;
+  background-color: rgba(32, 1, 1, 0.938);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  footer div {
+    display: block; }
+    footer div.sedesFooter {
+      margin: 20px;
       display: block; }
-      body footer div.sedesFooter {
-        margin: 20px;
-        display: block; }
-        body footer div.sedesFooter p {
-          margin: 0px 0px 20px 0px;
-          font-size: 20px; }
-        body footer div.sedesFooter ul li {
-          font-size: 14px;
-          margin: 5px;
-          list-style: none; }
-      body footer div.redesSociales a img {
-        width: 50px; }
-  body div.redesSociales-movil {
-    display: none; }
+      footer div.sedesFooter p {
+        margin: 0px 0px 20px 0px;
+        font-size: 20px; }
+      footer div.sedesFooter ul li {
+        font-size: 14px;
+        margin: 5px;
+        list-style: none; }
+    footer div.redesSociales a img {
+      width: 50px; }
+
+div.redesSociales-movil {
+  display: none; }
 
 /* ----------------------------------------------------------------------------------------- */
+/* ------------------------------- Media Queries versión Mobile ------------------------------ */
+@media screen and (max-width: 767px) and (min-width: 200px) {
+  header div.logo {
+    display: flex;
+    justify-content: center;
+    height: 20vw; }
+  footer div p {
+    margin: 0px 0px 20px 0px;
+    font-size: 1rem; }
+  footer div ul li {
+    font-size: 0.9rem;
+    margin: 5px;
+    list-style: none; }
+  footer div.redesSociales a img {
+    display: none; }
+  div.redesSociales-movil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    div.redesSociales-movil a img {
+      width: 40px; }
+  body main div.fraseMotivacional {
+    height: 4rem; }
+    body main div.fraseMotivacional p {
+      font-size: 1.3rem; }
+  body main div p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+    padding: 1em;
+    text-align: center; }
+  body main div.contenedor-para-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h2" "img-1" "historia-p1" "img-2" "historia-p2" "img-3" "historia-p3"; }
+    body main div.contenedor-para-grid img .nuestraHistoria-img-1 {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid img .nuestraHistoria-img-2 {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid img .nuestraHistoria-img-3 {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+  body main div.contenedor-para-grid-profesores {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h2" "Mickey" "texto-Mickey" "Rocky" "texto-Rocky" "Apollo" "texto-Apollo" "Clubber" "texto-Clubber" "Drago" "texto-Drago"; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Rocky {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Apollo {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Clubber {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Drago {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+  body main div.cuerpoCentralGris div.formulario {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: left; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormulario {
+      width: 100%;
+      height: 50px;
+      font-size: 1.2rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioConsulta {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 100%;
+      height: 75px;
+      font-size: 1rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton {
+      width: 260px;
+      height: 30px;
+      font-size: 1rem; }
+      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton:hover {
+        width: 260px;
+        height: 30px;
+        font-size: 1rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset {
+      width: 260px;
+      height: 30px;
+      font-size: 1rem; }
+      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset:hover {
+        width: 260px;
+        height: 30px;
+        font-size: 1rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div select.inputFormulario {
+      width: 100%;
+      height: 50px;
+      width: 100%;
+      height: 50px;
+      font-size: 1.2rem; }
+  body main div.separador {
+    height: 50px; }
+  body main iframe.videoPresentacion {
+    width: 100%;
+    height: 100vw; } }
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------------- Media Queries versión Tablet ------------------------------ */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  header div.logo {
+    display: flex;
+    justify-content: center;
+    height: 15vw; }
+  footer div p {
+    margin: 0px 0px 20px 0px;
+    font-size: 1rem; }
+  footer div ul li {
+    font-size: 0.9rem;
+    margin: 5px;
+    list-style: none; }
+  footer div.redesSociales a img {
+    display: none; }
+  div.redesSociales-movil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    div.redesSociales-movil a img {
+      width: 40px; }
+  body main div.fraseMotivacional {
+    height: 4rem; }
+    body main div.fraseMotivacional p {
+      font-size: 1.3rem; }
+  body main div p {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px black;
+    padding: 1em;
+    text-align: center; }
+  body main div.contenedor-para-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: "h2 h2" "historia-p1 img-1" "historia-p2 img-2" "historia-p3 img-3"; }
+    body main div.contenedor-para-grid img .nuestraHistoria-img-1 {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100vw;
+      height: auto; }
+    body main div.contenedor-para-grid img .nuestraHistoria-img-2 {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100vw;
+      height: auto; }
+    body main div.contenedor-para-grid img .nuestraHistoria-img-3 {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100vw;
+      height: auto; }
+  body main div.contenedor-para-grid-profesores {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h2" "Mickey" "texto-Mickey" "Rocky" "texto-Rocky" "Apollo" "texto-Apollo" "Clubber" "texto-Clubber" "Drago" "texto-Drago"; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Rocky {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Apollo {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Clubber {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Drago {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+      height: 100vw; }
+  body main div.cuerpoCentralGris div.formulario {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: left; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormulario {
+      width: 100%;
+      height: 50px;
+      font-size: 1.2rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioConsulta {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 100%;
+      height: 75px;
+      font-size: 1rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton {
+      width: 260px;
+      height: 30px;
+      font-size: 1rem; }
+      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton:hover {
+        width: 260px;
+        height: 30px;
+        font-size: 1rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset {
+      width: 260px;
+      height: 30px;
+      font-size: 1rem; }
+      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset:hover {
+        width: 260px;
+        height: 30px;
+        font-size: 1rem; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div select.inputFormulario {
+      width: 100%;
+      height: 50px;
+      font-size: 1.2rem; }
+  body main div.separador {
+    height: 50px; }
+  body main iframe.videoPresentacion {
+    width: 100%;
+    height: 100vw; } }
+
+/*----------------------------------------------------------------------------------------------*/

@@ -1,0 +1,429 @@
+/* ------------------------------- Media Queries versión Mobile ------------------------------ */ 
+@media screen and (max-width: 767px) and (min-width: 200px) {
+    header {
+        div {
+            &.logo {
+                display: flex;
+                justify-content: center;
+                height: 20vw;
+            }
+        }
+    }
+    footer {
+        div {
+            p {
+                margin: 0px 0px 20px 0px;
+                font-size: 1rem;
+            }
+            ul {
+                li {
+                    font-size: 0.9rem;
+                    margin: 5px;
+                    list-style: none;
+                }
+            }
+            &.redesSociales {
+                a {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    div {
+        &.redesSociales-movil {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+    }
+    body {
+        main {
+            div {
+                &.fraseMotivacional {
+                    p{
+                        font-size: 1.3rem;
+                    }
+                    height: 4rem;
+                    
+                }
+                p {
+                    font-size: 1.5rem;
+                    text-shadow: 1px 1px 1px black;
+                    padding: 1em;
+                    text-align: center;
+                }
+                &.contenedor-para-grid {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                
+                    grid-template-areas: 
+                    "h2"
+                    "img-1"
+                    "historia-p1"
+                    "img-2"
+                    "historia-p2"
+                    "img-3"
+                    "historia-p3";
+                    img {
+                        .nuestraHistoria-img-1 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        .nuestraHistoria-img-2 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        .nuestraHistoria-img-3 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                    }
+                }
+                &.contenedor-para-grid-profesores {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                
+                    grid-template-areas: 
+                    "h2"
+                    "Mickey"
+                    "texto-Mickey"
+                    "Rocky"
+                    "texto-Rocky"
+                    "Apollo"
+                    "texto-Apollo"
+                    "Clubber"
+                    "texto-Clubber"
+                    "Drago"
+                    "texto-Drago";
+                    img {
+                        &.plantelProfesores-img-Mickey {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Rocky {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Apollo {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Clubber {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Drago {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                    }
+                }
+                &.cuerpoCentralGris {
+                    div {
+                        &.formulario {
+                            font-size: 1.2rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 50px;
+                            text-align: left;
+                            form {
+                                fieldset {
+                                    div {
+                                        input {
+                                            &.inputFormulario {
+                                                @include medidas (100%, 50px);
+                                                font-size: 1.2rem;
+                                            }
+                                            &.inputFormularioConsulta {
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: flex-start;
+                                                @include medidas (100%, 75px);
+                                                font-size: 1rem;
+                                            }
+                                            &.inputFormularioBoton {
+                                                @include medidas (260px, 30px);
+                                                font-size: 1rem;
+                                                &:hover {
+                                                    width: 260px;
+                                                    height: 30px;
+                                                    font-size: 1rem;
+                                                }
+                                            }
+                                            &.inputFormularioBoton-Reset {
+                                                @include medidas (260px, 30px);
+                                                font-size: 1rem;
+                                                &:hover {
+                                                    @include medidas (260px, 30px);
+                                                    font-size: 1rem;
+                                                }
+                                            }
+                                        }
+                                        select {
+                                            &.inputFormulario {
+                                                width: 100%;
+                                                height: 50px;
+                                                @include medidas (100%, 50px);
+                                                font-size: 1.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.separador {
+                    height: 50px;
+                }
+            }
+            iframe.videoPresentacion {
+                @include medidas (100%, 100vw);
+            }
+        }
+    }
+    
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* ------------------------------- Media Queries versión Tablet ------------------------------ */ 
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    header {
+        div {
+            &.logo {
+                display: flex;
+                justify-content: center;
+                height: 15vw;
+            }
+        }
+    }
+    footer {
+        div {
+            p {
+                margin: 0px 0px 20px 0px;
+                font-size: 1rem;
+            }
+            ul {
+                li {
+                    font-size: 0.9rem;
+                    margin: 5px;
+                    list-style: none;
+                }
+            }
+            &.redesSociales {
+                a {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    div {
+        &.redesSociales-movil {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+    }
+    body {
+        main {
+            div {
+                &.fraseMotivacional {
+                    p{
+                        font-size: 1.3rem;
+                    }
+                    height: 4rem;
+                    
+                }
+                p {
+                    font-size: 1.3rem;
+                    text-shadow: 1px 1px 1px black;
+                    padding: 1em;
+                    text-align: center;
+                }
+                &.contenedor-para-grid {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+                
+                    grid-template-areas: 
+                    "h2 h2"
+                    "historia-p1 img-1"
+                    "historia-p2 img-2"
+                    "historia-p3 img-3";
+                    img {
+                        .nuestraHistoria-img-1 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100vw, auto);
+                        }
+                        .nuestraHistoria-img-2 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100vw, auto);
+                        }
+                        .nuestraHistoria-img-3 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100vw, auto);
+                        }
+                    }
+                }
+                &.contenedor-para-grid-profesores {
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                
+                    grid-template-areas: 
+                    "h2"
+                    "Mickey"
+                    "texto-Mickey"
+                    "Rocky"
+                    "texto-Rocky"
+                    "Apollo"
+                    "texto-Apollo"
+                    "Clubber"
+                    "texto-Clubber"
+                    "Drago"
+                    "texto-Drago";
+                    img {
+                        &.plantelProfesores-img-Mickey {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Rocky {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Apollo {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Clubber {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                        &.plantelProfesores-img-Drago {
+                            display: flex;
+                            flex-direction: column;
+                            justify-self: center;
+                            @include medidas (100%, 100vw);
+                        }
+                    }
+                }
+                &.cuerpoCentralGris {
+                    div {
+                        &.formulario {
+                            font-size: 1.2rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 50px;
+                            text-align: left;
+                            form {
+                                fieldset {
+                                    div {
+                                        input {
+                                            &.inputFormulario {
+                                                @include medidas (100%, 50px);
+                                                font-size: 1.2rem;
+                                            }
+                                            &.inputFormularioConsulta {
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: flex-start;
+                                                @include medidas (100%, 75px);
+                                                font-size: 1rem;
+                                            }
+                                            &.inputFormularioBoton {
+                                                @include medidas (260px, 30px);
+                                                font-size: 1rem;
+                                                &:hover {
+                                                    @include medidas (260px, 30px);
+                                                    font-size: 1rem;
+                                                }
+                                            }
+                                            &.inputFormularioBoton-Reset {
+                                                @include medidas (260px, 30px);
+                                                font-size: 1rem;
+                                                &:hover {
+                                                    @include medidas (260px, 30px);
+                                                    font-size: 1rem;
+                                                }
+                                            }
+                                        }
+                                        select {
+                                            &.inputFormulario {
+                                                @include medidas (100%, 50px);
+                                                font-size: 1.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.separador {
+                    height: 50px;
+                }
+            }
+            iframe.videoPresentacion {
+                @include medidas (100%, 100vw);
+            }
+        }
+    }
+    
+}
+
+/*----------------------------------------------------------------------------------------------*/

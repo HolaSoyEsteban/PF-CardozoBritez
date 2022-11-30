@@ -4,21 +4,21 @@ body {
     main {
         div {
             &.cuerpoCentralGris {
-                background-color: rgba(0, 0, 0, 0.568);
-                font-size: 40px;
+                background-color: $color-cuerpo-central;
+                font-size: 2rem;
                 margin-top: 30px;
                 padding-top: 30px;
                 padding-bottom: 30px;
                 h2 {
                     font-size: 2rem;
                     text-align: center;
-                    color: rgb(224, 222, 222);
+                    color: $color-h2;
                     text-shadow: 3px 3px 2px black;
                 }
             }
             &.contenedor-para-grid {
                 display: grid;
-                grid-template-columns: 70% 30%;
+                grid-template-columns: 65% 35%;
                 grid-template-rows: 0.2fr 1fr 1fr 1fr;
             
                 grid-template-areas: 
@@ -32,40 +32,37 @@ body {
                 div {
                     &.nuestraHistoria-parrafo-1 {
                         grid-area: historia-p1;
-                        color: antiquewhite;
+                        color: $color-texto-general-claro;
                         text-align: left;
-                        font-size: 1.5rem;
-                        background-color: rgba(20, 15, 15, 0.616);
+                        font-size: 1rem;
+                        background-color: $color-cuerpo-central-resaltado;
                     }
                     &.nuestraHistoria-parrafo-2 {
                         grid-area: historia-p2;
-                        color: antiquewhite;
+                        color: $color-texto-general-claro;
                         text-align: left;
-                        font-size: 1.5rem;
+                        font-size: 1rem;
                     }
                     &.nuestraHistoria-parrafo-3 {
                         grid-area: historia-p3;
-                        color: antiquewhite;
+                        color: $color-texto-general-claro;
                         text-align: left;
-                        font-size: 1.5rem;
-                        background-color: rgba(20, 15, 15, 0.616);
+                        font-size: 1rem;
+                        background-color: $color-cuerpo-central-resaltado;
                     }
                 }
                 img {
                     &.nuestraHistoria-img-1 {
                         grid-area: img-1;
-                        width: 100%;
-                        height: 100%;
+                        @include medidas (100%, 100%);
                     }
                     &.nuestraHistoria-img-2 {
                         grid-area: img-2;
-                        width: 100%;
-                        height: 100%;
+                        @include medidas (100%, 100%);
                     }
                     &.nuestraHistoria-img-3 {
                         grid-area: img-3;
-                        width: 100%;
-                        height: 100%;
+                        @include medidas (100%, 100%);
                     }
                 }
             }
