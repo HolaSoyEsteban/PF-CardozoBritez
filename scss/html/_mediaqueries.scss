@@ -1,5 +1,5 @@
 /* ------------------------------- Media Queries versión Mobile ------------------------------ */ 
-@media screen and (max-width: 767px) and (min-width: 200px) {
+@media screen and (max-width: 767px) and (min-width: 100px) {
     header {
         div {
             &.logo {
@@ -50,9 +50,9 @@
             div {
                 &.fraseMotivacional {
                     p{
-                        font-size: 1.3rem;
+                        font-size: 1rem;
                     }
-                    height: 4rem;
+                    height: 5rem;
                     
                 }
                 p {

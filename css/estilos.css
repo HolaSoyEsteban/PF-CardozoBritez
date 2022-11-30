@@ -415,7 +415,7 @@ div.redesSociales-movil {
 
 /* ----------------------------------------------------------------------------------------- */
 /* ------------------------------- Media Queries versión Mobile ------------------------------ */
-@media screen and (max-width: 767px) and (min-width: 200px) {
+@media screen and (max-width: 767px) and (min-width: 100px) {
   header div.logo {
     display: flex;
     justify-content: center;
@@ -437,9 +437,9 @@ div.redesSociales-movil {
     div.redesSociales-movil a img {
       width: 40px; }
   body main div.fraseMotivacional {
-    height: 4rem; }
+    height: 5rem; }
     body main div.fraseMotivacional p {
-      font-size: 1.3rem; }
+      font-size: 1rem; }
   body main div p {
     font-size: 1.5rem;
     text-shadow: 1px 1px 1px black;
