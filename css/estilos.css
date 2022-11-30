@@ -5,6 +5,53 @@
   padding: 0px;
   box-sizing: border-box; }
 
+/* ----------------------------------- Extends ----------------------------------- */
+section nav div div ul li a.links-del-menu, section nav div div ul li a.links-del-menu-actual {
+  color: #f7eadd;
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration: none; }
+
+section nav div div ul li a.links-del-menu:hover, section nav div div ul li a.links-del-menu-actual:hover {
+  color: #fffefe;
+  font-size: 1.6em;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: scale(1.15);
+  transition: all 1s; }
+
+main div.contenedor-para-grid div.nuestraHistoria-parrafo-1, main div.contenedor-para-grid div.nuestraHistoria-parrafo-2, main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
+  color: antiquewhite;
+  text-align: left;
+  font-size: 1rem; }
+
+main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Rocky, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Apollo, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Clubber, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Drago {
+  color: antiquewhite;
+  text-align: left;
+  font-size: 1.5rem;
+  background-color: rgba(20, 15, 15, 0.616); }
+
+section nav div div ul li a.links-del-menu {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 1s; }
+
+section nav div div ul li a.links-del-menu-actual {
+  background-color: rgba(104, 97, 97, 0.486);
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
+  border-radius: 10px;
+  padding: 0.4em;
+  transition: all 2s; }
+
+main div.contenedor-para-grid div.nuestraHistoria-parrafo-1 {
+  background-color: rgba(20, 15, 15, 0.616); }
+
+main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
+  background-color: rgba(20, 15, 15, 0.616); }
+
+/*---------------------------------------------------------------------------------*/
 /*----------------------------------- Css para página Index ---------------------------------*/
 main {
   background-color: rgba(190, 190, 190, 0.788); }
@@ -132,28 +179,17 @@ body main div.cuerpoCentralGris {
 
 body main div.contenedor-para-grid {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 0.2fr 1fr 1fr 1fr;
   grid-template-areas: "h2 h2" "historia-p1 img-1" "historia-p2 img-2" "historia-p3 img-3"; }
   body main div.contenedor-para-grid h2 {
     grid-area: h2; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-1 {
-    grid-area: historia-p1;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: historia-p1; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-2 {
-    grid-area: historia-p2;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1rem; }
+    grid-area: historia-p2; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
-    grid-area: historia-p3;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: historia-p3; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
     grid-area: img-1;
     width: 100%;
@@ -198,7 +234,7 @@ body main div.cuerpoCentralGris {
 /* ------------------------- CSS para página Profesores ------------------------ */
 body main div.cuerpoCentralGris {
   background-color: rgba(0, 0, 0, 0.568);
-  font-size: 40px;
+  font-size: 2rem;
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -216,35 +252,15 @@ body main div.contenedor-para-grid-profesores {
   body main div.contenedor-para-grid-profesores h2 {
     grid-area: h2; }
   body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey {
-    grid-area: texto-Mickey;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: texto-Mickey; }
   body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Rocky {
-    grid-area: texto-Rocky;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: texto-Rocky; }
   body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Apollo {
-    grid-area: texto-Apollo;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: texto-Apollo; }
   body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Clubber {
-    grid-area: texto-Clubber;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: texto-Clubber; }
   body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Drago {
-    grid-area: texto-Drago;
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1.5rem;
-    background-color: rgba(20, 15, 15, 0.616); }
+    grid-area: texto-Drago; }
   body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
     grid-area: Mickey;
     width: 100%;
@@ -372,42 +388,6 @@ section {
         section nav div div ul li a {
           color: #f7eadd !important;
           /* Tuve que usar  " !important "  porque Bootstrap lo dejaba con el color de su estilo */ }
-          section nav div div ul li a.links-del-menu {
-            color: #f7eadd;
-            font-size: 1.4em;
-            text-align: center;
-            text-decoration: none;
-            margin-left: 10px;
-            margin-right: 10px;
-            transition: all 1s; }
-            section nav div div ul li a.links-del-menu:hover {
-              color: #fffefe;
-              font-size: 1.6em;
-              text-align: center;
-              text-decoration: none;
-              margin-left: 10px;
-              margin-right: 10px;
-              transform: scale(1.15);
-              transition: all 1s; }
-          section nav div div ul li a.links-del-menu-actual {
-            color: #f7eadd;
-            font-size: 1.4em;
-            text-align: center;
-            text-decoration: none;
-            background-color: rgba(104, 97, 97, 0.486);
-            box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
-            border-radius: 10px;
-            padding: 0.4em;
-            transition: all 2s; }
-            section nav div div ul li a.links-del-menu-actual:hover {
-              color: #fffefe;
-              font-size: 1.6em;
-              text-align: center;
-              text-decoration: none;
-              margin-left: 10px;
-              margin-right: 10px;
-              transform: scale(1.15);
-              transition: all 1s; }
 
 footer {
   color: antiquewhite;
@@ -527,7 +507,7 @@ div.redesSociales-movil {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
     margin-top: 50px;
     text-align: left; }
@@ -559,8 +539,6 @@ div.redesSociales-movil {
         height: 30px;
         font-size: 1rem; }
     body main div.cuerpoCentralGris div.formulario form fieldset div select.inputFormulario {
-      width: 100%;
-      height: 50px;
       width: 100%;
       height: 50px;
       font-size: 1.2rem; }
@@ -664,7 +642,7 @@ div.redesSociales-movil {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
     margin-top: 50px;
     text-align: left; }

@@ -1,0 +1,112 @@
+/* ----------------------------------- Extends ----------------------------------- */
+
+// Links del menu de navegación //
+
+%linksMenu{
+    color: $color-texto-navbar;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+}
+%linksMenuHover{
+    color: $color-texto-navbar-hover; 
+    font-size: 1.6em;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: scale(1.15);
+    transition: all 1s;
+}
+
+// Contenido perteneciente a la página Nosotros //
+%historiaParrafo{
+    color: $color-texto-general-claro;
+    text-align: left;
+    font-size: 1rem;
+}
+
+// Contenido perteneciente a la página Profesores //
+%plantelProfesoresParrafos{
+    color: $color-texto-general-claro;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: $color-cuerpo-central-resaltado;
+}
+
+
+section {
+    nav {
+        div {
+            div {
+                ul {
+                    li {
+                        a {
+                            &.links-del-menu {
+                                @extend %linksMenu;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                transition: all 1s;
+                                &:hover{
+                                    @extend %linksMenuHover;
+                                }
+                            }
+                            &.links-del-menu-actual{
+                                @extend %linksMenu;
+                                background-color: rgba(104, 97, 97, 0.486);
+                                box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.719);
+                                border-radius: 10px;
+                                padding: 0.4em;
+                                transition: all 2s;
+                                &:hover{
+                                    @extend %linksMenuHover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    div {
+        &.contenedor-para-grid {
+            div {
+                &.nuestraHistoria-parrafo-1 {
+                    @extend %historiaParrafo;
+                    background-color: $color-cuerpo-central-resaltado;
+                }
+                &.nuestraHistoria-parrafo-2 {
+                    @extend %historiaParrafo;
+                }
+                &.nuestraHistoria-parrafo-3 {
+                    @extend %historiaParrafo;
+                    background-color: $color-cuerpo-central-resaltado;
+                }
+            }
+        }
+        &.contenedor-para-grid-profesores {
+            div {
+                &.plantelProfesores-parrafo-Mickey {
+                    @extend %plantelProfesoresParrafos;
+                }
+                &.plantelProfesores-parrafo-Rocky {
+                    @extend %plantelProfesoresParrafos;
+                }
+                &.plantelProfesores-parrafo-Apollo {
+                    @extend %plantelProfesoresParrafos;
+                }
+                &.plantelProfesores-parrafo-Clubber {
+                    @extend %plantelProfesoresParrafos;
+                }
+                &.plantelProfesores-parrafo-Drago {
+                    @extend %plantelProfesoresParrafos;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------*/

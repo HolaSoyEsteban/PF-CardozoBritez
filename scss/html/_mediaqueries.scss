@@ -76,21 +76,15 @@
                     "historia-p3";
                     img {
                         .nuestraHistoria-img-1 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         .nuestraHistoria-img-2 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         .nuestraHistoria-img-3 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                     }
@@ -114,33 +108,23 @@
                     "texto-Drago";
                     img {
                         &.plantelProfesores-img-Mickey {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Rocky {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Apollo {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Clubber {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Drago {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                     }
@@ -149,9 +133,7 @@
                     div {
                         &.formulario {
                             font-size: 1.2rem;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
+                            @include configuracionFlex-1;
                             align-items: center;
                             margin-top: 50px;
                             text-align: left;
@@ -174,8 +156,7 @@
                                                 @include medidas (260px, 30px);
                                                 font-size: 1rem;
                                                 &:hover {
-                                                    width: 260px;
-                                                    height: 30px;
+                                                    @include medidas (260px, 30px);
                                                     font-size: 1rem;
                                                 }
                                             }
@@ -190,8 +171,6 @@
                                         }
                                         select {
                                             &.inputFormulario {
-                                                width: 100%;
-                                                height: 50px;
                                                 @include medidas (100%, 50px);
                                                 font-size: 1.2rem;
                                             }
@@ -291,21 +270,15 @@
                     "historia-p3 img-3";
                     img {
                         .nuestraHistoria-img-1 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100vw, auto);
                         }
                         .nuestraHistoria-img-2 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100vw, auto);
                         }
                         .nuestraHistoria-img-3 {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100vw, auto);
                         }
                     }
@@ -329,33 +302,23 @@
                     "texto-Drago";
                     img {
                         &.plantelProfesores-img-Mickey {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Rocky {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Apollo {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Clubber {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                         &.plantelProfesores-img-Drago {
-                            display: flex;
-                            flex-direction: column;
-                            justify-self: center;
+                            @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
                     }
@@ -364,9 +327,7 @@
                     div {
                         &.formulario {
                             font-size: 1.2rem;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
+                            @include configuracionFlex-1;
                             align-items: center;
                             margin-top: 50px;
                             text-align: left;

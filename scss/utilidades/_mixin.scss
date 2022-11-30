@@ -2,3 +2,10 @@
     width: $ancho;
     height: $alto;
 }
+
+// Usado en Página de MediaQueries //
+@mixin configuracionFlex-1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}

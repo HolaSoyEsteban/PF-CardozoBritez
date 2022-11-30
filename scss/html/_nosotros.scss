@@ -18,7 +18,7 @@ body {
             }
             &.contenedor-para-grid {
                 display: grid;
-                grid-template-columns: 65% 35%;
+                grid-template-columns: 60% 40%;
                 grid-template-rows: 0.2fr 1fr 1fr 1fr;
             
                 grid-template-areas: 
@@ -32,23 +32,12 @@ body {
                 div {
                     &.nuestraHistoria-parrafo-1 {
                         grid-area: historia-p1;
-                        color: $color-texto-general-claro;
-                        text-align: left;
-                        font-size: 1rem;
-                        background-color: $color-cuerpo-central-resaltado;
                     }
                     &.nuestraHistoria-parrafo-2 {
                         grid-area: historia-p2;
-                        color: $color-texto-general-claro;
-                        text-align: left;
-                        font-size: 1rem;
                     }
                     &.nuestraHistoria-parrafo-3 {
                         grid-area: historia-p3;
-                        color: $color-texto-general-claro;
-                        text-align: left;
-                        font-size: 1rem;
-                        background-color: $color-cuerpo-central-resaltado;
                     }
                 }
                 img {
