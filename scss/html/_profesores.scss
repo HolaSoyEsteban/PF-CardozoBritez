@@ -19,7 +19,7 @@ body {
             &.contenedor-para-grid-profesores {
                 display: grid;
                 grid-template-columns: 30% 70%;
-                grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
             
                 grid-template-areas: 
                 "h2 h2"
@@ -51,23 +51,28 @@ body {
                 img {
                     &.plantelProfesores-img-Mickey {
                         grid-area: Mickey;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraPlantelProfesores-img
                     }
                     &.plantelProfesores-img-Rocky {
                         grid-area: Rocky;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraPlantelProfesores-img
                     }
                     &.plantelProfesores-img-Apollo {
                         grid-area: Apollo;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraPlantelProfesores-img
                     }
                     &.plantelProfesores-img-Clubber {
                         grid-area: Clubber;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraPlantelProfesores-img
                     }
                     &.plantelProfesores-img-Drago {
                         grid-area: Drago;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraPlantelProfesores-img
                     }
                 }
             }

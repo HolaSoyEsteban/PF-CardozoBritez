@@ -9,3 +9,18 @@
     flex-direction: column;
     justify-self: center;
 }
+
+@mixin paraNuestraHistoria-img {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+@mixin paraPlantelProfesores-img {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px;
+}

@@ -43,15 +43,18 @@ body {
                 img {
                     &.nuestraHistoria-img-1 {
                         grid-area: img-1;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraNuestraHistoria-img;
                     }
                     &.nuestraHistoria-img-2 {
                         grid-area: img-2;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraNuestraHistoria-img;
                     }
                     &.nuestraHistoria-img-3 {
                         grid-area: img-3;
-                        @include medidas (100%, 100%);
+                        @include medidas (100%, auto);
+                        @include paraNuestraHistoria-img;
                     }
                 }
             }

@@ -31,7 +31,8 @@ main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey, m
   color: antiquewhite;
   text-align: left;
   font-size: 1.5rem;
-  background-color: rgba(20, 15, 15, 0.616); }
+  background-color: rgba(20, 15, 15, 0.616);
+  border-radius: 20px 0px 0px 20px; }
 
 section nav div div ul li a.links-del-menu {
   margin-left: 10px;
@@ -193,15 +194,27 @@ body main div.contenedor-para-grid {
   body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
     grid-area: img-1;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-2 {
     grid-area: img-2;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-3 {
     grid-area: img-3;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center; }
 
 body main div.separador {
   height: 200px; }
@@ -247,7 +260,7 @@ body main div.cuerpoCentralGris {
 body main div.contenedor-para-grid-profesores {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "h2 h2" "Mickey texto-Mickey" "Rocky texto-Rocky" "Apollo texto-Apollo" "Clubber texto-Clubber" "Drago texto-Drago"; }
   body main div.contenedor-para-grid-profesores h2 {
     grid-area: h2; }
@@ -264,23 +277,48 @@ body main div.contenedor-para-grid-profesores {
   body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
     grid-area: Mickey;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px; }
   body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Rocky {
     grid-area: Rocky;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px; }
   body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Apollo {
     grid-area: Apollo;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px; }
   body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Clubber {
     grid-area: Clubber;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px; }
   body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Drago {
     grid-area: Drago;
     width: 100%;
-    height: 100%; }
+    height: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 0px 0px 20px; }
 
 /* ----------------------------------------------------------------------------------------- */
 /* ------------------------- CSS para página Combates ------------------------ */
@@ -471,38 +509,53 @@ div.redesSociales-movil {
   body main div.contenedor-para-grid-profesores {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
     grid-template-areas: "h2" "Mickey" "texto-Mickey" "Rocky" "texto-Rocky" "Apollo" "texto-Apollo" "Clubber" "texto-Clubber" "Drago" "texto-Drago"; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey {
+      border-radius: 0px 0px 30px 30px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Rocky {
+      border-radius: 0px 0px 30px 30px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Apollo {
+      border-radius: 0px 0px 30px 30px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Clubber {
+      border-radius: 0px 0px 30px 30px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Drago {
+      border-radius: 0px 0px 30px 30px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Rocky {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Apollo {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Clubber {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Drago {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
   body main div.cuerpoCentralGris div.formulario {
     font-size: 1.2rem;
     display: flex;
@@ -606,38 +659,53 @@ div.redesSociales-movil {
   body main div.contenedor-para-grid-profesores {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
     grid-template-areas: "h2" "Mickey" "texto-Mickey" "Rocky" "texto-Rocky" "Apollo" "texto-Apollo" "Clubber" "texto-Clubber" "Drago" "texto-Drago"; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey {
+      border-radius: 0px 0px 25px 25px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Rocky {
+      border-radius: 0px 0px 25px 25px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Apollo {
+      border-radius: 0px 0px 25px 25px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Clubber {
+      border-radius: 0px 0px 25px 25px; }
+    body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Drago {
+      border-radius: 0px 0px 25px 25px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Mickey {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Rocky {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Apollo {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Clubber {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
     body main div.contenedor-para-grid-profesores img.plantelProfesores-img-Drago {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
-      height: 100vw; }
+      height: 100vw;
+      border-radius: 20px 20px 0px 0px; }
   body main div.cuerpoCentralGris div.formulario {
     font-size: 1.2rem;
     display: flex;

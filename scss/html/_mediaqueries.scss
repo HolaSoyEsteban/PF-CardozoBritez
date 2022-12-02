@@ -92,7 +92,7 @@
                 &.contenedor-para-grid-profesores {
                     display: grid;
                     grid-template-columns: 100%;
-                    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 0.2fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
                 
                     grid-template-areas: 
                     "h2"
@@ -106,26 +106,48 @@
                     "texto-Clubber"
                     "Drago"
                     "texto-Drago";
+                    div {
+                        &.plantelProfesores-parrafo-Mickey {
+                            border-radius: 0px 0px 30px 30px;
+                        }
+                        &.plantelProfesores-parrafo-Rocky {
+                            border-radius: 0px 0px 30px 30px;
+                        }
+                        &.plantelProfesores-parrafo-Apollo {
+                            border-radius: 0px 0px 30px 30px;
+                        }
+                        &.plantelProfesores-parrafo-Clubber {
+                            border-radius: 0px 0px 30px 30px;
+                        }
+                        &.plantelProfesores-parrafo-Drago {
+                            border-radius: 0px 0px 30px 30px;
+                        }
+                    }
                     img {
                         &.plantelProfesores-img-Mickey {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Rocky {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Apollo {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Clubber {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Drago {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                     }
                 }
@@ -286,7 +308,7 @@
                 &.contenedor-para-grid-profesores {
                     display: grid;
                     grid-template-columns: 100%;
-                    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 0.2fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
                 
                     grid-template-areas: 
                     "h2"
@@ -300,26 +322,48 @@
                     "texto-Clubber"
                     "Drago"
                     "texto-Drago";
+                    div {
+                        &.plantelProfesores-parrafo-Mickey {
+                            border-radius: 0px 0px 25px 25px;
+                        }
+                        &.plantelProfesores-parrafo-Rocky {
+                            border-radius: 0px 0px 25px 25px;
+                        }
+                        &.plantelProfesores-parrafo-Apollo {
+                            border-radius: 0px 0px 25px 25px;
+                        }
+                        &.plantelProfesores-parrafo-Clubber {
+                            border-radius: 0px 0px 25px 25px;
+                        }
+                        &.plantelProfesores-parrafo-Drago {
+                            border-radius: 0px 0px 25px 25px;
+                        }
+                    }
                     img {
                         &.plantelProfesores-img-Mickey {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Rocky {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Apollo {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Clubber {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                         &.plantelProfesores-img-Drago {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
+                            border-radius: 20px 20px 0px 0px;
                         }
                     }
                 }
