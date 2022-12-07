@@ -25,7 +25,7 @@ section nav div div ul li a.links-del-menu:hover, section nav div div ul li a.li
 main div.contenedor-para-grid div.nuestraHistoria-parrafo-1, main div.contenedor-para-grid div.nuestraHistoria-parrafo-2, main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
   color: antiquewhite;
   text-align: left;
-  font-size: 1rem; }
+  font-size: 0.7rem; }
 
 main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Rocky, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Apollo, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Clubber, main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Drago {
   color: antiquewhite;
@@ -87,7 +87,7 @@ main {
     padding-top: 30px;
     padding-bottom: 30px; }
     main div.perfilesProfesores h2 {
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: center;
       color: #e0dede;
       text-shadow: 3px 3px 2px black; }
@@ -104,30 +104,30 @@ main {
         border-radius: 300px; }
       main div.perfilesProfesores div.perfiles div p.perfilesNombres {
         color: antiquewhite;
-        font-size: 2rem; }
+        font-size: 1.7rem; }
   main div.opinionAlumnos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
     main div.opinionAlumnos div {
       width: 200px;
-      display: block;
-      margin-top: 50px;
-      margin-left: 50px;
-      margin-right: 50px; }
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2.8rem; }
       main div.opinionAlumnos div p {
         width: 250px;
         background-color: #110101;
         margin-bottom: 8px;
-        font-size: 20px;
+        font-size: 1.3rem;
         border-radius: 15px;
         color: antiquewhite; }
       main div.opinionAlumnos div div img {
         width: 100px;
         height: 100px;
         border-radius: 100px;
-        position: relative;
-        left: 20px; }
+        position: relative; }
   main div.BotondeCombates {
     display: flex;
     justify-content: center; }
@@ -158,7 +158,7 @@ main {
   main div.separador {
     height: 200px; }
   main h3 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: black;
     text-shadow: 5px 5px 5px #423600;
     margin-top: 25px;
@@ -168,12 +168,11 @@ main {
 /* ------------------------- CSS para página Nosotros ----------------------- */
 body main div.cuerpoCentralGris {
   background-color: rgba(0, 0, 0, 0.568);
-  font-size: 2rem;
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px; }
   body main div.cuerpoCentralGris h2 {
-    font-size: 2rem;
+    font-size: 3em;
     text-align: center;
     color: #e0dede;
     text-shadow: 3px 3px 2px black; }
@@ -399,9 +398,9 @@ body {
 
 header {
   background-color: rgba(32, 1, 1, 0.938); }
-  header div .logo {
+  header div.logo {
     display: flex;
-    justify-content: left; }
+    justify-content: center; }
 
 section {
   display: block;

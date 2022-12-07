@@ -37,7 +37,7 @@ main {
             padding-top: 30px;
             padding-bottom: 30px;
             h2 {
-                font-size: 2rem;
+                font-size: 3rem;
                 text-align: center;
                 color: $color-h2;
                 text-shadow: 3px 3px 2px black;
@@ -58,7 +58,7 @@ main {
                         p {
                             &.perfilesNombres {
                                 color: $color-texto-general-claro;
-                                font-size: 2rem;
+                                font-size: 1.7rem;
                             }
                         }
                     }
@@ -71,15 +71,16 @@ main {
             justify-content: center;
             div {
                 width: 200px;
-                display: block;
-                margin-top: 50px;
-                margin-left: 50px;
-                margin-right: 50px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin:2.8rem;
                 p {
                     width: 250px;
                     background-color: rgb(17, 1, 1);
                     margin-bottom: 8px;
-                    font-size: 20px;
+                    font-size: 1.3rem;
                     border-radius: 15px;
                     color: $color-texto-general-claro;
                 }
@@ -88,7 +89,6 @@ main {
                         @include medidas (100px, 100px);
                         border-radius: 100px;
                         position: relative;
-                        left: 20px;
                     }
                 }
             }
@@ -126,7 +126,7 @@ main {
         }
     }
     h3 {
-        font-size: 3rem;
+        font-size: 2.7rem;
         color: $color-h3;
         text-shadow: 5px 5px 5px rgb(66, 54, 0);
         margin-top: 25px;
