@@ -49,7 +49,7 @@ body {
                     }
                     &.nuestraHistoria-img-3 {
                         grid-area: img-3;
-                        @include medidas (32.5vw, 30.5vw);
+                        @include medidas (32.2vw, 30.5vw);
                         @include paraNuestraHistoria-img;
                     }
                 }

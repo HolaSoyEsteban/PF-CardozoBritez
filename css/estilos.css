@@ -220,7 +220,7 @@ body main div.contenedor-para-grid {
     align-self: center; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-3 {
     grid-area: img-3;
-    width: 32.5vw;
+    width: 32.2vw;
     height: 30.5vw;
     max-width: auto;
     display: flex;
