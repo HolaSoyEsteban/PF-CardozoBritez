@@ -34,6 +34,20 @@ main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey, m
   background-color: rgba(20, 15, 15, 0.616);
   border-radius: 20px 0px 0px 20px; }
 
+main div.cuerpoCentralGris {
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 1rem;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+main div.cuerpoCentralGris h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  color: #e0dede;
+  text-shadow: 3px 3px 2px black;
+  margin-bottom: 1.5rem; }
+
 section nav div div ul li a.links-del-menu {
   margin-left: 10px;
   margin-right: 10px;
@@ -58,13 +72,13 @@ main {
   background-color: rgba(190, 190, 190, 0.788); }
   main h1 {
     color: #a17400;
-    font-size: 60px;
+    font-size: 4rem;
     text-align: center;
     text-shadow: 2px 3px 3px black; }
   main iframe.videoPresentacion {
     width: 100%; }
   main div p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 1em;
     text-align: center; }
   main div.fraseMotivacional {
@@ -99,9 +113,10 @@ main {
       margin-top: 20px;
       margin-bottom: 20px; }
       main div.perfilesProfesores div.perfiles img {
-        width: 300px;
-        height: 200px;
-        border-radius: 300px; }
+        width: 325px;
+        height: 315px;
+        border-radius: 100px;
+        filter: drop-shadow(20px 20px 10px black); }
       main div.perfilesProfesores div.perfiles div p.perfilesNombres {
         color: antiquewhite;
         font-size: 1.7rem; }
@@ -115,7 +130,8 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 2.8rem; }
+      margin: 2.8rem;
+      filter: drop-shadow(0px 0px 30px black); }
       main div.opinionAlumnos div p {
         width: 250px;
         background-color: #110101;
@@ -124,15 +140,16 @@ main {
         border-radius: 15px;
         color: antiquewhite; }
       main div.opinionAlumnos div div img {
-        width: 100px;
-        height: 100px;
+        width: 108px;
+        height: 105px;
         border-radius: 100px;
-        position: relative; }
+        position: relative;
+        filter: drop-shadow(0px 0px 10px black); }
   main div.BotondeCombates {
     display: flex;
     justify-content: center; }
     main div.BotondeCombates a button {
-      margin-top: 50px;
+      margin-top: 150px;
       margin-bottom: 30px;
       width: 150px;
       height: 2.5em;
@@ -144,7 +161,7 @@ main {
       text-align: center;
       transition: all 1.3s; }
       main div.BotondeCombates a button:hover {
-        margin-top: 50px;
+        margin-top: 160px;
         margin-bottom: 30px;
         width: 155px;
         height: 2.7em;
@@ -166,33 +183,28 @@ main {
 
 /*-----------------------------------------------------------------------------------------*/
 /* ------------------------- CSS para página Nosotros ----------------------- */
-body main div.cuerpoCentralGris {
-  background-color: rgba(0, 0, 0, 0.568);
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  body main div.cuerpoCentralGris h2 {
-    font-size: 3em;
-    text-align: center;
-    color: #e0dede;
-    text-shadow: 3px 3px 2px black; }
-
 body main div.contenedor-para-grid {
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr;
-  grid-template-areas: "h2 h2" "historia-p1 img-1" "historia-p2 img-2" "historia-p3 img-3"; }
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "h2 h2 h2" "img-1 img-2 img-3" "historia-p1 historia-p2 historia-p3" "historia-p1 historia-p2 historia-p3"; }
   body main div.contenedor-para-grid h2 {
     grid-area: h2; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-1 {
     grid-area: historia-p1; }
+    body main div.contenedor-para-grid div.nuestraHistoria-parrafo-1 p {
+      font-size: 1.3rem; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-2 {
     grid-area: historia-p2; }
+    body main div.contenedor-para-grid div.nuestraHistoria-parrafo-2 p {
+      font-size: 1.3rem; }
   body main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 {
     grid-area: historia-p3; }
+    body main div.contenedor-para-grid div.nuestraHistoria-parrafo-3 p {
+      font-size: 1.3rem; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
     grid-area: img-1;
-    width: 100%;
+    width: 33vw;
     height: auto;
     max-width: auto;
     display: flex;
@@ -200,7 +212,7 @@ body main div.contenedor-para-grid {
     align-self: center; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-2 {
     grid-area: img-2;
-    width: 100%;
+    width: 33vw;
     height: auto;
     max-width: auto;
     display: flex;
@@ -208,8 +220,8 @@ body main div.contenedor-para-grid {
     align-self: center; }
   body main div.contenedor-para-grid img.nuestraHistoria-img-3 {
     grid-area: img-3;
-    width: 100%;
-    height: auto;
+    width: 32.5vw;
+    height: 30.5vw;
     max-width: auto;
     display: flex;
     flex-direction: column;
@@ -220,42 +232,20 @@ body main div.separador {
 
 /* ----------------------------------------------------------------------------------------- */
 /* ------------------------- CSS para página Sedes ----------------------- */
-body main div.cuerpoCentralGris {
-  background-color: rgba(0, 0, 0, 0.568);
-  font-size: 40px;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  body main div.cuerpoCentralGris h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #e0dede;
-    text-shadow: 3px 3px 2px black; }
-  body main div.cuerpoCentralGris div.sedeGimnasios div p {
-    color: antiquewhite;
-    text-align: center;
-    margin-left: 0px;
-    font-size: 1.5rem; }
-  body main div.cuerpoCentralGris div.sedeGimnasios div div p {
-    color: antiquewhite;
-    text-align: center;
-    margin-left: 0px;
-    font-size: 1.5rem; }
+body main div.cuerpoCentralGris div.sedeGimnasios div p {
+  color: antiquewhite;
+  text-align: center;
+  margin-left: 0px;
+  font-size: 1.5rem; }
+
+body main div.cuerpoCentralGris div.sedeGimnasios div div p {
+  color: antiquewhite;
+  text-align: center;
+  margin-left: 0px;
+  font-size: 1.5rem; }
 
 /* ----------------------------------------------------------------------------------------- */
 /* ------------------------- CSS para página Profesores ------------------------ */
-body main div.cuerpoCentralGris {
-  background-color: rgba(0, 0, 0, 0.568);
-  font-size: 2rem;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  body main div.cuerpoCentralGris h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #e0dede;
-    text-shadow: 3px 3px 2px black; }
-
 body main div.contenedor-para-grid-profesores {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -323,71 +313,60 @@ body main div.contenedor-para-grid-profesores {
 /* ------------------------- CSS para página Combates ------------------------ */
 /* ----------------------------------------------------------------------------------------- */
 /* ------------------------- CSS para página Contacto ------------------------ */
-body main div.cuerpoCentralGris {
-  background-color: rgba(0, 0, 0, 0.568);
-  font-size: 40px;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  body main div.cuerpoCentralGris h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #e0dede;
-    text-shadow: 3px 3px 2px black; }
-  body main div.cuerpoCentralGris div.formulario {
-    font-size: 2rem;
+body main div.cuerpoCentralGris div.formulario {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-align: left; }
+  body main div.cuerpoCentralGris div.formulario form fieldset div label {
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px black; }
+  body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormulario {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    text-align: left; }
-    body main div.cuerpoCentralGris div.formulario form fieldset div label {
-      color: antiquewhite;
-      text-shadow: 2px 2px 4px black; }
-    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormulario {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      height: 50px;
-      font-size: 2rem; }
-    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioConsulta {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      width: 100%;
-      height: 75px;
-      font-size: 1.4rem; }
-    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton {
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    font-size: 2rem; }
+  body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioConsulta {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 75px;
+    font-size: 1.4rem; }
+  body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton {
+    width: 260px;
+    height: 30px;
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: #1b7e02; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton:hover {
       width: 260px;
       height: 30px;
       font-size: 18px;
       color: antiquewhite;
-      background-color: #1b7e02; }
-      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton:hover {
-        width: 260px;
-        height: 30px;
-        font-size: 18px;
-        color: antiquewhite;
-        background-color: #24a304; }
-    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset {
+      background-color: #24a304; }
+  body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset {
+    width: 260px;
+    height: 30px;
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: maroon; }
+    body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset:hover {
       width: 260px;
       height: 30px;
       font-size: 18px;
       color: antiquewhite;
-      background-color: maroon; }
-      body main div.cuerpoCentralGris div.formulario form fieldset div input.inputFormularioBoton-Reset:hover {
-        width: 260px;
-        height: 30px;
-        font-size: 18px;
-        color: antiquewhite;
-        background-color: #c20303; }
-    body main div.cuerpoCentralGris div.formulario form fieldset div select.inputFormulario {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      height: 50px;
-      font-size: 2rem; }
+      background-color: #c20303; }
+  body main div.cuerpoCentralGris div.formulario form fieldset div select.inputFormulario {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    font-size: 2rem; }
 
 /* ----------------------------------------------------------------------------------------- */
 /*------------------------------------ CSS General -------------------------------------*/
@@ -484,22 +463,22 @@ div.redesSociales-movil {
     text-align: center; }
   body main div.contenedor-para-grid {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: "h2" "img-1" "historia-p1" "img-2" "historia-p2" "img-3" "historia-p3"; }
-    body main div.contenedor-para-grid img .nuestraHistoria-img-1 {
+    body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
       height: 100vw; }
-    body main div.contenedor-para-grid img .nuestraHistoria-img-2 {
+    body main div.contenedor-para-grid img.nuestraHistoria-img-2 {
       display: flex;
       flex-direction: column;
       justify-self: center;
       width: 100%;
       height: 100vw; }
-    body main div.contenedor-para-grid img .nuestraHistoria-img-3 {
+    body main div.contenedor-para-grid img.nuestraHistoria-img-3 {
       display: flex;
       flex-direction: column;
       justify-self: center;
@@ -508,7 +487,7 @@ div.redesSociales-movil {
   body main div.contenedor-para-grid-profesores {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0.2fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
+    grid-template-rows: auto;
     grid-template-areas: "h2" "Mickey" "texto-Mickey" "Rocky" "texto-Rocky" "Apollo" "texto-Apollo" "Clubber" "texto-Clubber" "Drago" "texto-Drago"; }
     body main div.contenedor-para-grid-profesores div.plantelProfesores-parrafo-Mickey {
       border-radius: 0px 0px 30px 30px; }
@@ -634,27 +613,27 @@ div.redesSociales-movil {
     text-align: center; }
   body main div.contenedor-para-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
-    grid-template-areas: "h2 h2" "historia-p1 img-1" "historia-p2 img-2" "historia-p3 img-3"; }
-    body main div.contenedor-para-grid img .nuestraHistoria-img-1 {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "h2" "img-1" "historia-p1" "img-2" "historia-p2" "img-3" "historia-p3"; }
+    body main div.contenedor-para-grid img.nuestraHistoria-img-1 {
       display: flex;
       flex-direction: column;
       justify-self: center;
-      width: 100vw;
-      height: auto; }
-    body main div.contenedor-para-grid img .nuestraHistoria-img-2 {
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid img.nuestraHistoria-img-2 {
       display: flex;
       flex-direction: column;
       justify-self: center;
-      width: 100vw;
-      height: auto; }
-    body main div.contenedor-para-grid img .nuestraHistoria-img-3 {
+      width: 100%;
+      height: 100vw; }
+    body main div.contenedor-para-grid img.nuestraHistoria-img-3 {
       display: flex;
       flex-direction: column;
       justify-self: center;
-      width: 100vw;
-      height: auto; }
+      width: 100%;
+      height: 100vw; }
   body main div.contenedor-para-grid-profesores {
     display: grid;
     grid-template-columns: 100%;

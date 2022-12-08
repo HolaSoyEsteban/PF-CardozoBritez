@@ -63,8 +63,8 @@
                 }
                 &.contenedor-para-grid {
                     display: grid;
-                    grid-template-columns: 100%;
-                    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto;
                 
                     grid-template-areas: 
                     "h2"
@@ -75,15 +75,15 @@
                     "img-3"
                     "historia-p3";
                     img {
-                        .nuestraHistoria-img-1 {
+                        &.nuestraHistoria-img-1 {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
-                        .nuestraHistoria-img-2 {
+                        &.nuestraHistoria-img-2 {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
-                        .nuestraHistoria-img-3 {
+                        &.nuestraHistoria-img-3 {
                             @include configuracionFlex-1;
                             @include medidas (100%, 100vw);
                         }
@@ -92,7 +92,7 @@
                 &.contenedor-para-grid-profesores {
                     display: grid;
                     grid-template-columns: 100%;
-                    grid-template-rows: 0.2fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
+                    grid-template-rows: auto;
                 
                     grid-template-areas: 
                     "h2"
@@ -282,26 +282,29 @@
                 }
                 &.contenedor-para-grid {
                     display: grid;
-                    grid-template-columns: 50% 50%;
-                    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto;
                 
                     grid-template-areas: 
-                    "h2 h2"
-                    "historia-p1 img-1"
-                    "historia-p2 img-2"
-                    "historia-p3 img-3";
+                    "h2"
+                    "img-1"
+                    "historia-p1"
+                    "img-2"
+                    "historia-p2"
+                    "img-3"
+                    "historia-p3";
                     img {
-                        .nuestraHistoria-img-1 {
+                        &.nuestraHistoria-img-1 {
                             @include configuracionFlex-1;
-                            @include medidas (100vw, auto);
+                            @include medidas (100%, 100vw);
                         }
-                        .nuestraHistoria-img-2 {
+                        &.nuestraHistoria-img-2 {
                             @include configuracionFlex-1;
-                            @include medidas (100vw, auto);
+                            @include medidas (100%, 100vw);
                         }
-                        .nuestraHistoria-img-3 {
+                        &.nuestraHistoria-img-3 {
                             @include configuracionFlex-1;
-                            @include medidas (100vw, auto);
+                            @include medidas (100%, 100vw);
                         }
                     }
                 }

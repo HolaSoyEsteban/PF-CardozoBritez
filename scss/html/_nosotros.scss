@@ -3,56 +3,53 @@
 body {
     main {
         div {
-            &.cuerpoCentralGris {
-                background-color: $color-cuerpo-central;
-                margin-top: 30px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                h2 {
-                    font-size: 3em;
-                    text-align: center;
-                    color: $color-h2;
-                    text-shadow: 3px 3px 2px black;
-                }
-            }
             &.contenedor-para-grid {
                 display: grid;
-                grid-template-columns: 60% 40%;
-                grid-template-rows: 0.2fr 1fr 1fr 1fr;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
             
                 grid-template-areas: 
-                "h2 h2"
-                "historia-p1 img-1"
-                "historia-p2 img-2"
-                "historia-p3 img-3";
+                "h2 h2 h2"
+                "img-1 img-2 img-3"
+                "historia-p1 historia-p2 historia-p3"
+                "historia-p1 historia-p2 historia-p3";
                 h2 {
                     grid-area: h2;
                 }
                 div {
                     &.nuestraHistoria-parrafo-1 {
                         grid-area: historia-p1;
+                        p{
+                            font-size: 1.3rem;
+                        }
                     }
                     &.nuestraHistoria-parrafo-2 {
                         grid-area: historia-p2;
+                        p{
+                            font-size: 1.3rem;
+                        }
                     }
                     &.nuestraHistoria-parrafo-3 {
                         grid-area: historia-p3;
+                        p{
+                            font-size: 1.3rem;
+                        }
                     }
                 }
                 img {
                     &.nuestraHistoria-img-1 {
                         grid-area: img-1;
-                        @include medidas (100%, auto);
+                        @include medidas (33vw, auto);
                         @include paraNuestraHistoria-img;
                     }
                     &.nuestraHistoria-img-2 {
                         grid-area: img-2;
-                        @include medidas (100%, auto);
+                        @include medidas (33vw, auto);
                         @include paraNuestraHistoria-img;
                     }
                     &.nuestraHistoria-img-3 {
                         grid-area: img-3;
-                        @include medidas (100%, auto);
+                        @include medidas (32.5vw, 30.5vw);
                         @include paraNuestraHistoria-img;
                     }
                 }

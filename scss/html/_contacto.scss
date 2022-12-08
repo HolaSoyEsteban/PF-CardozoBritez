@@ -4,17 +4,6 @@ body {
     main {
         div {
             &.cuerpoCentralGris {
-                background-color: $color-cuerpo-central;
-                font-size: 40px;
-                margin-top: 30px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                h2 {
-                    font-size: 2rem;
-                    text-align: center;
-                    color: $color-h2;
-                    text-shadow: 3px 3px 2px black;
-                }
                 div {
                     &.formulario {
                         font-size: 2rem;
